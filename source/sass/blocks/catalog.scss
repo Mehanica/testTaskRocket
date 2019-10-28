@@ -1,0 +1,80 @@
+.catalog {
+  min-height: 938px;
+  background-color: $color-background-dark;
+
+  @media (max-width: $width-desktop) {
+    min-height: 1127px;
+  }
+
+  @media (max-width: $width-only-mobile) {
+    min-height: 1101px;
+  }
+}
+
+.catalog__inner {
+  @include centering;
+}
+
+.catalog .catalog__inner {
+  padding-left: 132px;
+  padding-right: 132px;
+
+  @media (max-width: $width-desktop) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.catalog__inner h2 {
+  padding-top: 89px;
+  padding-bottom: 53px;
+  font-family: "Roboto Condensed", BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+  font-size: $font-size-lagger;
+  line-height: 50.36px;
+  font-weight: 400;
+  color: $color-main;
+
+  @media (max-width: $width-desktop) {
+    padding-top: 49px;
+    padding-bottom: 51px;
+    padding-right: 88px;
+    font-size: $font-size-biggest;
+    line-height: 45px;
+  }
+
+  @media (max-width: $width-only-mobile) {
+    padding-top: 51px;
+    padding-bottom: 40px;
+    padding-right: 3px;
+    padding-left: 10px;
+    font-size: $font-size-bigger;
+    line-height: 39.38px;
+  }
+}
+
+.catalog__wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media (max-width: $width-desktop) {
+    padding-bottom: 77px;
+    min-height: 937px;
+    flex-direction: column;
+  }
+
+  @media (max-width: $width-only-mobile) {
+    padding-bottom: 64px;
+    min-height: 892px;
+  }
+}
+
+.catalog__item {
+  @media (max-width: 1374px) {
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: $width-desktop) {
+    margin-bottom: 0;
+  }
+}

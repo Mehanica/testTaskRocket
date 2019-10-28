@@ -1,3 +1,21 @@
-h1 {
-  color: red;
-}
+@import "settings.scss";
+//
+@import "fonts.scss";
+@import "global.scss";
+//
+@import "blocks/page-header.scss";
+@import "blocks/logo.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/page-main.scss";
+@import "blocks/promo-content.scss";
+@import "blocks/button.scss";
+@import "blocks/advantages.scss";
+@import "blocks/about-company.scss";
+@import "blocks/catalog.scss";
+@import "blocks/product-item.scss";
+@import "blocks/feedback.scss";
+@import "blocks/feedback-form.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/social-links.scss";
+@import "blocks/pop-up.scss";
+@import "blocks/overlay.scss";

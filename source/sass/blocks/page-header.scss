@@ -1,0 +1,114 @@
+.page-header {
+  @include centering;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-height: 135px;
+  width: 100%;
+  padding-top: 33px;
+  position: relative;
+  z-index: 1;
+
+  @media (max-width: $width-desktop) {
+    padding-top: 20px;
+  }
+
+  @media (max-width: $width-only-mobile) {
+    padding-top: 17px;
+  }
+}
+
+.page-header__logo h1 {
+  color: $color-main;
+}
+
+.page-header__contacts {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 410px;
+  width: 390px;
+
+  @media (max-width: 1300px) {
+    margin-left: 100px;
+  }
+
+  @media (max-width: $width-desktop) {
+    font-size: 0;
+    width: 114px;
+  }
+
+  @media (max-width: $width-only-mobile) {
+    width: 90px;
+  }
+}
+
+.page-header__contacts a {
+  position: relative;
+  padding-top: 16px;
+  text-decoration: none;
+  color: $color-main;
+
+  @media (max-width: $width-desktop) {
+    padding-left: 0;
+  }
+}
+
+.page-header__contacts svg {
+  position: absolute;
+
+}
+
+.page-header__email svg {
+  right: 116px;
+  top: 19px;
+
+  @media (max-width: $width-desktop) {
+    width: 25px;
+    height: 19px;
+    top: 15px;
+    right: 14px;
+  }
+
+  @media (max-width: $width-only-mobile) {
+    top: 8px;
+    right: 23px;
+  }
+}
+
+.page-header__phone svg {
+  right: 189px;
+
+  @media (max-width: $width-desktop) {
+    width: 24px;
+    height: 24px;
+    top: 12px;
+    right: 0;
+  }
+
+  @media (max-width: $width-only-mobile) {
+    top: 5px;
+  }
+}
+
+.page-header__callback-button {
+  margin-top: 4px;
+  min-height: 45px;
+  padding-left: 25px;
+  padding-right: 25px;
+  width: 180px;
+  font-size: $font-size-extra-small;
+  letter-spacing: 0.6px;
+  border: 1px solid $color-main;
+
+  @media (max-width: $width-desktop) {
+    @include visually-hidden;
+  }
+
+  @media (max-width: $width-only-mobile) {
+    /* Стили, влияющие на экраны ДО 767px (Мобильные) */
+  }
+}

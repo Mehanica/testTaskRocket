@@ -1,0 +1,15 @@
+.main-nav {
+  width: 60px;
+
+  @media (max-width: $width-desktop) {
+    width: 50px;
+  }
+
+  @media (max-width: $width-only-mobile) {
+    width: 70px;
+  }
+}
+
+.main-nav__toggle {
+  @include visually-hidden;
+}

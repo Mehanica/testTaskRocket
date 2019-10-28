@@ -1,0 +1,31 @@
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-width: 320px;
+  font-family: "PTMono", BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+  font-size: $font-size-main;
+  font-weight: 400;
+  font-style: normal;
+  color: $color-main-text;
+  background-color: $color-main;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+  min-width: 320px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

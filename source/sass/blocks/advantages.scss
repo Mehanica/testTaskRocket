@@ -1,0 +1,241 @@
+.advantages {
+  margin-top: 112px;
+
+  background-image: url("../../img/polygon1.svg"), url("../../img/polygon2.svg"), url("../../img/polygon3.svg"), url("../../img/polygon4.svg");
+  background-position: top -67px left 202px,bottom -56px left,558px 35px,top 284px right 28px;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+
+  @media (max-width: $width-desktop) {
+    margin-bottom: 20px;
+    margin-top: 54px;
+    background-image: url("../../img/polygon3.svg");
+    background-position: top 36px right -312px;
+  }
+
+  @media (max-width: $width-only-mobile) {
+    margin-bottom: 44px;
+    margin-top: 37px;
+    background-position: top 615px right -432px;
+  }
+}
+
+.advantages__inner {
+  @include centering;
+}
+
+.advantages__inner h2 {
+  @include visually-hidden;
+}
+
+.advantages__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 122px;
+  padding-right: 122px;
+  list-style: none;
+
+  @media (max-width: $width-desktop) {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+.advantages__list a {
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
+  width: 570px;
+  min-height: 299px;
+  padding-top: 96px;
+  padding-left: 42px;
+  padding-right: 39px;
+  border: 1px solid $color-background-light;
+  border-left: 3px solid $color-secondary;
+  background-color: $color-main;
+
+  &:hover {
+    background-color: $color-secondary;
+
+    svg {
+      fill: white;
+    }
+
+    h3 {
+      color: $color-main;
+    }
+
+    p {
+      color: $color-main;
+    }
+  }
+
+  @media (max-width: $width-desktop) {
+    width: 345px;
+    min-height: auto;
+    padding-top: 68px;
+    padding-left: 23px;
+    padding-right: 21px;
+    padding-bottom: 22px;
+  }
+
+  @media (max-width: $width-only-mobile) {
+    width: 290px;
+    padding-top: 70px;
+    padding-left: 23px;
+    padding-right: 19px;
+  }
+}
+
+.advantages__item {
+  position: relative;
+  margin-bottom: 29px;
+  width: 570px;
+
+  @media (max-width: $width-desktop) {
+    width: 345px;
+  }
+
+  @media (max-width: $width-only-mobile) {
+    margin-bottom: 19px;
+  }
+}
+.advantages__item--stopwatch a {
+  @media (max-width: $width-desktop) {
+    padding-bottom: 43px;
+  }
+
+  @media (max-width: $width-only-mobile) {
+    padding-bottom: 26px;
+  }
+}
+
+.advantages__item--hired a {
+  @media (max-width: $width-only-mobile) {
+    padding-right: 13px;
+    padding-bottom: 26px;
+  }
+}
+
+.advantages__item--detective a {
+  @media (max-width: $width-desktop) {
+    padding-top: 65px;
+    padding-bottom: 59px;
+  }
+
+  @media (max-width: $width-only-mobile) {
+    padding-top: 65px;
+    padding-right: 21px;
+    padding-bottom: 33px;
+  }
+}
+
+.advantages__item--tag a {
+  @media (max-width: $width-desktop) {
+    padding-bottom: 34px;
+  }
+
+  @media (max-width: $width-only-mobile) {
+    padding-top: 68px;
+    padding-bottom: 26px;
+  }
+}
+
+.advantages__item svg {
+  position: absolute;
+  left: 45px;
+  top: 40px;
+
+  @media (max-width: $width-desktop) {
+    left: 27px;
+    top: 24px;
+  }
+
+  @media (max-width: $width-only-mobile) {
+    left: 26px;
+  }
+}
+
+.advantages__item--hired svg {
+  @media (max-width: $width-desktop) {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.advantages__item--detective svg {
+  top: 45px;
+
+  @media (max-width: $width-desktop) {
+    top: 27px;
+    width: 30px;
+    height: 26px;
+  }
+}
+
+.advantages__item--tag svg {
+  @media (max-width: $width-desktop) {
+    top: 25px;
+    width: 32px;
+    height: 32px;
+  }
+
+  @media (max-width: $width-only-mobile) {
+    top: 25px;
+    left: 28px;
+  }
+}
+
+.advantages__item h3 {
+  padding-bottom: 20px;
+  font-family: "Roboto Condensed", BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+  font-size:$font-size-big;
+  font-weight: 400;
+  color: $color-secondary;
+
+  @media (max-width: $width-desktop) {
+    padding-bottom: 12px;
+  }
+
+  @media (max-width: $width-only-mobile) {
+    font-size: $font-size-small;
+    line-height: 28.18px;
+    padding-bottom: 12px;
+  }
+}
+
+.advantages__item p {
+  color: $color-main-text;
+  line-height: 21.5px;
+
+  @media (max-width: $width-desktop) {
+    line-height: 21.6px;
+  }
+
+  @media (max-width: $width-only-mobile) {
+    line-height: 21.6px;
+  }
+}
+
+.advantages__item--detective p {
+  @media (max-width: $width-desktop) {
+    transform: translateY(6px);
+  }
+
+  @media (max-width: $width-only-mobile) {
+    transform: translateY(-20px);
+  }
+}
+
+.advantages__item--tag p {
+  @media (max-width: $width-desktop) {
+    transform: translateY(-2px);
+  }
+}
+
+.advantages__about-company {
+  @include centering;
+
+  padding-left: 122px;
+  padding-right: 122px;
+}

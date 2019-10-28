@@ -1,0 +1,58 @@
+.product-item a {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 370px;
+  height: 620px;
+  text-decoration: none;
+
+  @media (max-width: $width-desktop) {
+    width: 720px;
+    height: 256px;
+  }
+
+  @media (max-width: $width-only-mobile) {
+    width: 290px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 63px;
+    height: 63px;
+    background-color: $color-secondary;
+    background-image: url("../../img/arrow.svg");
+    background-position: center left 31px;
+    background-repeat: no-repeat;
+  }
+}
+
+.product-item span {
+  position: absolute;
+  top: 50px;
+  left: 44px;
+  width: 173px;
+  font-family: "Roboto Condensed", BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+  font-size: $font-size-small;
+  line-height: 30px;
+  color: $color-main;
+
+  @media (max-width: $width-desktop) {
+    top: 40px;
+  }
+
+  @media (max-width: $width-only-mobile) {
+    top: 21px;
+    left: 35px;
+  }
+}
+
+.product-item--components span {
+  top: 50px;
+
+  @media (max-width: $width-only-mobile) {
+    top: 31px;
+  }
+}

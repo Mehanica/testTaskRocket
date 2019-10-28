@@ -1,0 +1,92 @@
+.pop-up {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: none;
+  width: 490px;
+  z-index: 5;
+}
+
+.pop-up--active {
+  display: block;
+}
+
+.pop-up__form {
+  padding-top: 29px;
+  padding-left: 39px;
+  padding-right: 39px;
+  width:490px;
+  min-height: 605px;
+  background-color: $color-secondary;
+}
+
+.pop-up__form h3 {
+  padding-bottom: 13px;
+  font-size: $font-size-bigger;
+  line-height: 39px;
+}
+
+.pop-up__form p {
+  padding-left: 0;
+  padding-right: 9px;
+  padding-bottom: 33px;
+  line-height: 22px;
+}
+
+.pop-up__form-field-contacts {
+  flex-direction: column;
+  padding-bottom: 0;
+  width: 411px;
+}
+.pop-up__form-field-contacts input {
+  margin-left: 0;
+  margin-bottom: 30px;
+  padding-bottom: 4px;
+  padding-left: 24px;
+  width: 411px;
+  min-height: 52px;
+}
+
+.pop-up__form-field-request textarea {
+  margin-left: 0;
+  padding-left: 24px;
+  min-height: 105px;
+  width: 411px;
+}
+
+.pop-up__form-field-contacts input,
+.pop-up__form-field-request textarea {
+  font-family: "PTMono", BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+  font-size: $font-size-main;
+  line-height: 21.5px;
+  color: $color-main;
+}
+
+.pop-up__form-button-and-checkbox-wrapper {
+  flex-direction: column;
+  margin-top: 26px;
+  margin-left: 0;
+  width: 411px;
+}
+
+.pop-up__form-button-and-checkbox-wrapper label {
+  width: 400px;
+  padding-left: 48px;
+}
+
+.pop-up__form-button {
+  margin-bottom: 28px;
+  width: 411px;
+}
+
+.pop-up__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 0;
+  border: 0;
+  background: 0 0;
+  cursor: pointer;
+  outline: 0;
+}
