@@ -49,8 +49,11 @@ form.addEventListener('change', formChangeHandler);
 
 document.addEventListener('DOMContentLoaded', function () {
   var values = JSON.parse(localStorage.getItem(form.id));
-  for (var i = 0; i < values.length; ++i) {
-    var element = form[values[i][0]];
-    element.value = values[i][1];
+
+  if (values) {
+    for (var i = 0; i < values.length; ++i) {
+      var element = form[values[i][0]];
+      element.value = values[i][1];
+    }
   }
 });
