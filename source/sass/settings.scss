@@ -8,6 +8,7 @@ $color-background-dark: #1B2D37;
 $color-background-light: #E5E5E5;
 $color-background-secondary-light: #FAFAFA;
 $color-grey: #626962;
+$color-light-grey: #C4C4C4;
 
 
 //fonts
@@ -31,8 +32,11 @@ $font-size-estra-extra-super-small: 12px;
 
 //width
 $width-tablet: 770px;
-$width-desktop: 1024px;
-$width-only-mobile: 768px;
+$width-desktop: 1023px;
+$width-only-mobile: 767px;
+
+$width-tablet: 1023px;
+$width-mobile: 767px;
 
 
 // mixins
@@ -49,19 +53,37 @@ $width-only-mobile: 768px;
   overflow: hidden;
 }
 
+// @mixin centering {
+//   margin: 0 auto;
+//   max-width: 290px;
+
+//   @media (min-width: $width-tablet) {
+//     max-width: 720px;
+//   }
+
+//   @media (min-width: $width-desktop) {
+//     // margin: 0 auto;
+//     max-width: 1434px;
+//     padding-left: 10px;
+//     padding-right: 10px;
+//   }
+// }
+
 @mixin centering {
   margin: 0 auto;
-  max-width: 290px;
+  max-width: 1434px;
+  padding-left: 10px;
+  padding-right: 10px;
 
-  @media (min-width: $width-tablet) {
+  @media (max-width: $width-desktop) {
     max-width: 720px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
-  @media (min-width: $width-desktop) {
-    // margin: 0 auto;
-    max-width: 1434px;
-    padding-left: 10px;
-    padding-right: 10px;
+  @media (max-width: $width-only-mobile) {
+    max-width: 290px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
-

@@ -28,6 +28,10 @@
     height: 881px;
     background-image: url("../../img/triangles-white.svg");
     background-repeat: no-repeat;
+
+    @media (max-width: 1373px) {
+      right: 492px;
+    }
   }
 
   &::after {
@@ -39,6 +43,10 @@
     height: 288px;
     background-image: url("../../img/paper-airplane.png");
     background-repeat: no-repeat;
+
+    @media (max-width: 1373px) {
+      right: 696px;
+    }
   }
 
   @media (max-width: $width-desktop) {
@@ -62,7 +70,7 @@
   padding-right: 122px;
 
   @media (max-width: 1300px) {
-    padding-left: 37.8%;
+    padding-left: 46.8%;
   }
 
   @media (max-width: $width-desktop) {

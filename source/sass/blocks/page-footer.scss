@@ -28,6 +28,11 @@
 
     @media (max-width: $width-only-mobile) {
       top: 260px;
+      height: 74px;
+      opacity: .2;
+      border-top: 1px solid $color-grey;
+      border-bottom: 1px solid $color-grey;
+      background-color: transparent;
     }
   }
 
@@ -96,6 +101,7 @@
 }
 
 .page-footer__navigation {
+  position: relative;
   width: 497px;
   order: 2;
 
@@ -111,6 +117,27 @@
 
   @media (max-width: $width-only-mobile) {
     padding-top: 92px;
+
+    &::before {
+    content: "";
+    position: absolute;
+    top: 119px;
+    right: 2px;
+    height: 1px;
+    width: 16px;
+    transform: rotate(90deg);
+    background-color:$color-light-grey;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 119px;
+      right: 2px;
+      height: 1px;
+      width: 16px;
+      background-color:$color-light-grey;
+    }
   }
 
 }
@@ -125,6 +152,7 @@
 }
 
 .page-footer__contacts {
+  position: relative;
   display: flex;
   flex-direction: column;
   padding-left: 160px;
@@ -152,6 +180,16 @@
   @media (max-width: $width-only-mobile) {
     padding-left: 0px;
     padding-top: 12px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 36px;
+      right: 2px;
+      height: 1px;
+      width: 16px;
+      background-color:$color-light-grey;
+    }
   }
 }
 
@@ -159,6 +197,10 @@
   position: absolute;
   left: 9px;
   top: 170px;
+
+  @media (max-width: 1435px) {
+    left: 75px;
+  }
 
   @media (max-width: $width-desktop) {
     position: relative;

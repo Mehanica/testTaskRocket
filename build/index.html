@@ -6,34 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Smart Device</title>
   <link rel="stylesheet" href="css/style.min.css">
-
-  <!-- Pixel Glass -->
-  <style>
-    HTML {
-      background-repeat: no-repeat;
-      background-position:  50% 0;
-      /* Mobile layout by default */
-      background-image: url( "img/smart-device-mobile.png" );
-    }
-    /* Tablet */
-    @media ( min-width: 768px ) {
-      HTML {
-        /* Tablet layout */
-        background-image: url( "img/smart-device-tablet.png" );
-      }
-    }
-    /* Desktop */
-    @media ( min-width: 1024px ) {
-      HTML {
-        /* Desktop layout */
-        background-image: url( "img/smart-device-desktop.png" );
-      }
-    }
-  </style>
-  <link href="pixel-glass/styles.css" rel="stylesheet">
-  <script src="pixel-glass/script.js"></script>
-  <!-- // Pixel Glass -->
-
 </head>
 <body>
   <div style="display: none">
@@ -197,7 +169,7 @@
               <span>Производство печатных плат</span>
               <picture>
                 <source media="(max-width: 767px)" srcset="../img/production-mobile.png">
-                <source media="(max-width: 1024px)" srcset="../img/production-tablet.png">
+                <source media="(max-width: 1023px)" srcset="../img/production-tablet.png">
                 <img src="../img/production-desktop.png" alt="Производство печатных плат">
               </picture>
             </a>
@@ -208,7 +180,7 @@
               <span>Монтаж печатных плат</span>
               <picture>
                 <source media="(max-width: 767px)" srcset="../img/montage-mobile.png">
-                <source media="(max-width: 1024px)" srcset="../img/montage-tablet.png">
+                <source media="(max-width: 1023px)" srcset="../img/montage-tablet.png">
                 <img src="../img/montage-desktop.png" alt="Монтаж печатных плат">
               </picture>
             </a>
@@ -219,7 +191,7 @@
               <span>Комплектующие для светотехники</span>
               <picture>
                 <source media="(max-width: 767px)" srcset="../img/components-mobile.png">
-                <source media="(max-width: 1024px)" srcset="../img/components-tablet.png">
+                <source media="(max-width: 1023px)" srcset="../img/components-tablet.png">
                 <img src="../img/components-desktop.png" alt="Комплектующие для светотехники">
               </picture>
             </a>
@@ -236,10 +208,10 @@
           <p>Мы проконсультируем Вас бесплатно</p>
           <div class="feedback-form__field-contacts">
             <label for="name">Поле для ввода имени пользователя</label>
-              <input type="text" name="name" placeholder="Имя" id="name" required="">
+            <input type="text" name="user-name" placeholder="Имя" id="user-name" required="">
 
-            <label for="tel">Поле для ввода номера телефона пользователя</label>
-            <input type="tel" name="tel" id="tel" placeholder="Телефон" required="">
+            <label for="phone">Поле для ввода номера телефона пользователя</label>
+            <input type="tel" name="tel" id="phone" placeholder="Телефон" required="">
           </div>
 
           <div class="feedback-form__field-request">
@@ -258,8 +230,6 @@
         </form>
       </div>
     </section>
-
-
   </main>
 
   <footer class="page-footer">
@@ -277,7 +247,6 @@
 
       <nav class="page-footer__navigation">
         <h3>Разделы сайта</h3>
-
         <ul class="page-footer__navigation-list">
           <li class="page-footer__navigation-item  page-footer__navigation-item--company"><a href="#">О компании</a></li>
           <li class="page-footer__navigation-item  page-footer__navigation-item--products"><a href="#">Продукты</a></li>
@@ -330,13 +299,13 @@
         </ul>
       </div>
 
-      <span class="page-footer__bottom-link  page-footer__bottom-link--rights" href="#">Все права защищены</span>
+      <span class="page-footer__bottom-link  page-footer__bottom-link--rights">Все права защищены</span>
 
-      <span class="page-footer__bottom-link  page-footer__bottom-link--service-devices" href="#">1999-2018 SD Service Devices</span>
+      <span class="page-footer__bottom-link  page-footer__bottom-link--service-devices">1999-2018 SD Service Devices</span>
 
-      <a class="page-footer__bottom-link  page-footer__bottom-link--confidentiality" href="#">Условия конфиденциальности</a>
+      <a class="page-footer__bottom-link  page-footer__bottom-link--confidentiality">Условия конфиденциальности</a>
 
-      <a class="page-footer__bottom-link  page-footer__bottom-link--developed" href="#">Developed by wow studio</a>
+      <a class="page-footer__bottom-link  page-footer__bottom-link--developed">Developed by wow studio</a>
     </div>
   </footer>
 
@@ -346,7 +315,7 @@
       <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
       <div class="pop-up__form-field-contacts  feedback-form__field-contacts">
         <label for="name">Поле для ввода имени пользователя</label>
-          <input type="text" name="name" placeholder="Имя" id="name" autofocus="" required="">
+        <input type="text" name="name" placeholder="Имя" id="name" autofocus="" required="">
 
         <label for="tel">Поле для ввода номера телефона пользователя</label>
         <input type="tel" name="tel" id="tel" placeholder="Телефон" required="">
