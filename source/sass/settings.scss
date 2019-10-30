@@ -35,9 +35,6 @@ $width-tablet: 770px;
 $width-desktop: 1023px;
 $width-only-mobile: 767px;
 
-$width-tablet: 1023px;
-$width-mobile: 767px;
-
 
 // mixins
 @mixin visually-hidden {
@@ -53,22 +50,6 @@ $width-mobile: 767px;
   overflow: hidden;
 }
 
-// @mixin centering {
-//   margin: 0 auto;
-//   max-width: 290px;
-
-//   @media (min-width: $width-tablet) {
-//     max-width: 720px;
-//   }
-
-//   @media (min-width: $width-desktop) {
-//     // margin: 0 auto;
-//     max-width: 1434px;
-//     padding-left: 10px;
-//     padding-right: 10px;
-//   }
-// }
-
 @mixin centering {
   margin: 0 auto;
   max-width: 1434px;
@@ -76,14 +57,12 @@ $width-mobile: 767px;
   padding-right: 10px;
 
   @media (max-width: $width-desktop) {
-    max-width: 720px;
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 
   @media (max-width: $width-only-mobile) {
-    max-width: 290px;
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }

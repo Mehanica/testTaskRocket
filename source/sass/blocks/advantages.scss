@@ -1,6 +1,5 @@
 .advantages {
   margin-top: 112px;
-
   background-image: url("../../img/polygon1.svg"), url("../../img/polygon2.svg"), url("../../img/polygon3.svg"), url("../../img/polygon4.svg");
   background-position: top -67px left 202px,bottom -56px left,558px 35px,top 284px right 28px;
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
@@ -71,7 +70,7 @@
   }
 
   @media (max-width: $width-desktop) {
-    width: 345px;
+    width: 100%;
     min-height: auto;
     padding-top: 68px;
     padding-left: 23px;
@@ -80,7 +79,7 @@
   }
 
   @media (max-width: $width-only-mobile) {
-    width: 290px;
+    width: 100%;
     padding-top: 70px;
     padding-left: 23px;
     padding-right: 19px;
@@ -89,15 +88,13 @@
 
 .advantages__item {
   position: relative;
+  display: flex;
   margin-bottom: 29px;
-  width: 570px;
-
-  @media (max-width: $width-desktop) {
-    width: 345px;
-  }
+  width: calc((100% - 30px) / 2);
 
   @media (max-width: $width-only-mobile) {
     margin-bottom: 19px;
+    width: 100%;
   }
 }
 .advantages__item--stopwatch a {

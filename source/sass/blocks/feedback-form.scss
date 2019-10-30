@@ -106,8 +106,8 @@
   }
 
   @media (max-width: $width-only-mobile) {
-    width: 290px;
     min-height: 104px;
+    width: 100%;
   }
 }
 

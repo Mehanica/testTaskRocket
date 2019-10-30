@@ -31,7 +31,7 @@
 
     @media (max-width: $width-desktop) {
       top: -133px;
-      right: -397px;
+      right: -372px;
       width: 1514px;
       height: 749px;
       background-size: contain;
@@ -39,7 +39,7 @@
 
     @media (max-width: $width-only-mobile) {
       top: -135px;
-      right: -517px;
+      right: -502px;
       width: 1446px;
       height: 716px;
     }
@@ -52,7 +52,7 @@
   padding-bottom: 27px;
   font-family: "Roboto Condensed", BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
   font-size: $font-size-estra-extra-super-large;
-  font-style: 700;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 5.2px;
   color: $color-main;
