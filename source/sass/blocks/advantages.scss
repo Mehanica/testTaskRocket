@@ -1,17 +1,17 @@
 .advantages {
   margin-top: 112px;
   background-image: url("../../img/polygon1.svg"), url("../../img/polygon2.svg"), url("../../img/polygon3.svg"), url("../../img/polygon4.svg");
-  background-position: top -67px left 202px,bottom -56px left,558px 35px,top 284px right 28px;
+  background-position: top -67px left 202px, bottom -56px left, 558px 35px, top 284px right 28px;
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
 
-  @media (max-width: $width-desktop) {
+  @media (max-width: $width-tablet) {
     margin-bottom: 20px;
     margin-top: 54px;
     background-image: url("../../img/polygon3.svg");
     background-position: top 36px right -312px;
   }
 
-  @media (max-width: $width-only-mobile) {
+  @media (max-width: $width-mobile) {
     margin-bottom: 44px;
     margin-top: 37px;
     background-position: top 615px right -432px;
@@ -22,10 +22,6 @@
   @include centering;
 }
 
-.advantages__inner h2 {
-  @include visually-hidden;
-}
-
 .advantages__list {
   display: flex;
   flex-wrap: wrap;
@@ -34,9 +30,9 @@
   padding-right: 122px;
   list-style: none;
 
-  @media (max-width: $width-desktop) {
-    padding-left: 0px;
-    padding-right: 0px;
+  @media (max-width: $width-tablet) {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -47,6 +43,7 @@
   width: 570px;
   min-height: 299px;
   padding-top: 96px;
+  padding-bottom: 40px;
   padding-left: 42px;
   padding-right: 39px;
   border: 1px solid $color-background-light;
@@ -69,7 +66,24 @@
     }
   }
 
-  @media (max-width: $width-desktop) {
+  &:active {
+    background-color: $color-social;
+    border-left: 3px solid $color-secondary-text;
+
+    svg {
+      fill: white;
+    }
+
+    h3 {
+      color: $color-main;
+    }
+
+    p {
+      color: $color-main;
+    }
+  }
+
+  @media (max-width: $width-tablet) {
     width: 100%;
     min-height: auto;
     padding-top: 68px;
@@ -78,7 +92,7 @@
     padding-bottom: 22px;
   }
 
-  @media (max-width: $width-only-mobile) {
+  @media (max-width: $width-mobile) {
     width: 100%;
     padding-top: 70px;
     padding-left: 23px;
@@ -89,38 +103,39 @@
 .advantages__item {
   position: relative;
   display: flex;
-  margin-bottom: 29px;
+  margin-bottom: 33px;
   width: calc((100% - 30px) / 2);
 
-  @media (max-width: $width-only-mobile) {
+  @media (max-width: $width-mobile) {
     margin-bottom: 19px;
     width: 100%;
   }
 }
+
 .advantages__item--stopwatch a {
-  @media (max-width: $width-desktop) {
+  @media (max-width: $width-tablet) {
     padding-bottom: 43px;
   }
 
-  @media (max-width: $width-only-mobile) {
+  @media (max-width: $width-mobile) {
     padding-bottom: 26px;
   }
 }
 
 .advantages__item--hired a {
-  @media (max-width: $width-only-mobile) {
+  @media (max-width: $width-mobile) {
     padding-right: 13px;
     padding-bottom: 26px;
   }
 }
 
 .advantages__item--detective a {
-  @media (max-width: $width-desktop) {
+  @media (max-width: $width-tablet) {
     padding-top: 65px;
     padding-bottom: 59px;
   }
 
-  @media (max-width: $width-only-mobile) {
+  @media (max-width: $width-mobile) {
     padding-top: 65px;
     padding-right: 21px;
     padding-bottom: 33px;
@@ -128,11 +143,11 @@
 }
 
 .advantages__item--tag a {
-  @media (max-width: $width-desktop) {
+  @media (max-width: $width-tablet) {
     padding-bottom: 34px;
   }
 
-  @media (max-width: $width-only-mobile) {
+  @media (max-width: $width-mobile) {
     padding-top: 68px;
     padding-bottom: 26px;
   }
@@ -143,18 +158,18 @@
   left: 45px;
   top: 40px;
 
-  @media (max-width: $width-desktop) {
+  @media (max-width: $width-tablet) {
     left: 27px;
     top: 24px;
   }
 
-  @media (max-width: $width-only-mobile) {
+  @media (max-width: $width-mobile) {
     left: 26px;
   }
 }
 
 .advantages__item--hired svg {
-  @media (max-width: $width-desktop) {
+  @media (max-width: $width-tablet) {
     width: 32px;
     height: 32px;
   }
@@ -163,7 +178,7 @@
 .advantages__item--detective svg {
   top: 45px;
 
-  @media (max-width: $width-desktop) {
+  @media (max-width: $width-tablet) {
     top: 27px;
     width: 30px;
     height: 26px;
@@ -171,13 +186,13 @@
 }
 
 .advantages__item--tag svg {
-  @media (max-width: $width-desktop) {
+  @media (max-width: $width-tablet) {
     top: 25px;
     width: 32px;
     height: 32px;
   }
 
-  @media (max-width: $width-only-mobile) {
+  @media (max-width: $width-mobile) {
     top: 25px;
     left: 28px;
   }
@@ -185,17 +200,17 @@
 
 .advantages__item h3 {
   padding-bottom: 20px;
-  font-family: "Roboto Condensed", BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
-  font-size:$font-size-big;
+  font-family: $font-secondary;
+  font-size: 24px;
   font-weight: 400;
   color: $color-secondary;
 
-  @media (max-width: $width-desktop) {
+  @media (max-width: $width-tablet) {
     padding-bottom: 12px;
   }
 
-  @media (max-width: $width-only-mobile) {
-    font-size: $font-size-small;
+  @media (max-width: $width-mobile) {
+    font-size: 20px;
     line-height: 28.18px;
     padding-bottom: 12px;
   }
@@ -205,27 +220,27 @@
   color: $color-main-text;
   line-height: 21.5px;
 
-  @media (max-width: $width-desktop) {
+  @media (max-width: $width-tablet) {
     line-height: 21.6px;
   }
 
-  @media (max-width: $width-only-mobile) {
+  @media (max-width: $width-mobile) {
     line-height: 21.6px;
   }
 }
 
 .advantages__item--detective p {
-  @media (max-width: $width-desktop) {
+  @media (max-width: $width-tablet) {
     transform: translateY(6px);
   }
 
-  @media (max-width: $width-only-mobile) {
+  @media (max-width: $width-mobile) {
     transform: translateY(-20px);
   }
 }
 
 .advantages__item--tag p {
-  @media (max-width: $width-desktop) {
+  @media (max-width: $width-tablet) {
     transform: translateY(-2px);
   }
 }

@@ -1,7 +1,7 @@
 .logo {
   display: flex;
 
-  @media (max-width: $width-only-mobile) {
+  @media (max-width: $width-mobile) {
     margin-right: 90px;
   }
 }
@@ -9,7 +9,7 @@
 .logo svg {
   margin-right: 15px;
 
-  @media (max-width: $width-only-mobile) {
+  @media (max-width: $width-mobile) {
     margin-left: 2px;
     width: 38px;
     height: 38px;
@@ -20,29 +20,29 @@
   padding-top: 5px;
   width: 140px;
 
-  @media (max-width: $width-desktop) {
+  @media (max-width: $width-tablet) {
     margin-right: 350px;
   }
 
-  @media (max-width: $width-only-mobile) {
+  @media (max-width: $width-mobile) {
     display: none;
   }
 }
 
 .logo__title h1,
 .logo__title h2 {
+  margin: 0;
   width: 150px;
-  font-family: "Roboto Condensed", BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
-  font-size: $font-size-large;
-  // line-height: 29px;
+  font-family: $font-secondary;
+  font-size: 25px;
 }
 
 .logo__title--footer {
-  @media (max-width: $width-desktop) {
+  @media (max-width: $width-tablet) {
     margin-right: 0;
   }
 
-  @media (max-width: $width-only-mobile) {
+  @media (max-width: $width-mobile) {
     display: flex;
     padding-top: 31px;
     width: auto;
@@ -51,8 +51,8 @@
 
 .logo__title span {
   display: flex;
-  font-family: "Roboto", BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
-  font-size: $font-size-estra-extra-super-small;
+  font-family: "$font-logo", BlinkMacSystemFont, "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+  font-size: 12px;
   font-weight: 500;
   line-height: 14px;
   color: $color-secondary-text;

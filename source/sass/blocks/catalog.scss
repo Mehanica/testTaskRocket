@@ -1,12 +1,12 @@
 .catalog {
-  min-height: 938px;
+  min-height: 937px;
   background-color: $color-background-dark;
 
-  @media (max-width: $width-desktop) {
-    min-height: 1127px;
+  @media (max-width: $width-tablet) {
+    min-height: 1126px;
   }
 
-  @media (max-width: $width-only-mobile) {
+  @media (max-width: $width-mobile) {
     min-height: 1101px;
   }
 }
@@ -15,41 +15,31 @@
   @include centering;
 }
 
-.catalog .catalog__inner {
-  // padding-left: 132px;
-  // padding-right: 132px;
-
-  // @media (max-width: $width-desktop) {
-  //   padding-left: 0;
-  //   padding-right: 0;
-  // }
-}
-
 .catalog__inner h2 {
   max-width: 1170px;
   margin: 0 auto;
   padding-top: 89px;
   padding-bottom: 53px;
-  font-family: "Roboto Condensed", BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
-  font-size: $font-size-lagger;
+  font-family: $font-secondary;
+  font-size: 36px;
   line-height: 50.36px;
   font-weight: 400;
   color: $color-main;
 
-  @media (max-width: $width-desktop) {
+  @media (max-width: $width-tablet) {
     padding-top: 49px;
     padding-bottom: 51px;
     padding-right: 90px;
-    font-size: $font-size-biggest;
+    font-size: 32px;
     line-height: 45px;
   }
 
-  @media (max-width: $width-only-mobile) {
-    padding-top: 51px;
+  @media (max-width: $width-mobile) {
+    padding-top: 49px;
     padding-bottom: 40px;
     padding-right: 3px;
     padding-left: 10px;
-    font-size: $font-size-bigger;
+    font-size: 28px;
     line-height: 39.38px;
   }
 }
@@ -61,13 +51,13 @@
   max-width: 1170px;
   margin: 0 auto;
 
-  @media (max-width: $width-desktop) {
+  @media (max-width: $width-tablet) {
     padding-bottom: 77px;
     min-height: 937px;
     flex-direction: column;
   }
 
-  @media (max-width: $width-only-mobile) {
+  @media (max-width: $width-mobile) {
     padding-bottom: 64px;
     min-height: 892px;
   }
@@ -80,7 +70,7 @@
     margin-bottom: 30px;
   }
 
-  @media (max-width: $width-desktop) {
+  @media (max-width: $width-tablet) {
     margin-bottom: 0;
     width: 100%;
   }

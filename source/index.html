@@ -6,6 +6,34 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Smart Device</title>
   <link rel="stylesheet" href="css/style.min.css">
+
+  <!-- Pixel Glass -->
+  <style>
+      HTML {
+        background-repeat: no-repeat;
+        background-position:  50% 0;
+        /* Mobile layout by default */
+        background-image: url( "img/smart-device-mobile.png" );
+      }
+      /* Tablet */
+      @media ( min-width: 768px ) {
+        HTML {
+          /* Tablet layout */
+          background-image: url( "img/smart-device-tablet.png" );
+        }
+      }
+      /* Desktop */
+      @media ( min-width: 1024px ) {
+        HTML {
+          /* Desktop layout */
+          background-image: url( "img/smart-device-desktop.png" );
+        }
+      }
+    </style>
+    <link href="pixel-glass/styles.css" rel="stylesheet">
+    <script src="pixel-glass/script.js"></script>
+    <!-- // Pixel Glass -->
+
 </head>
 <body>
   <div style="display: none">
@@ -25,7 +53,7 @@
     </div>
 
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <button class="main-nav__toggle  visually-hidden" type="button">Открыть меню</button>
     </nav>
 
     <div class="page-header__contacts">
@@ -40,9 +68,11 @@
           <use xlink:href="#icon-phone-call"></use>
         </svg>
       </a>
+
+      <a class="page-header__callback-button  button">заказать звонок</a>
     </div>
 
-    <a class="page-header__callback-button  button">заказать звонок</a>
+
   </header>
 
   <main class="page-main">
@@ -59,7 +89,7 @@
 
     <section class="advantages">
       <div class="advantages__inner">
-        <h2>Наши преимущества</h2>
+        <h2 class="visually-hidden">Наши преимущества</h2>
         <ul class="advantages__list">
           <li class="advantages__item  advantages__item--stopwatch">
             <a href="#">
@@ -138,20 +168,20 @@
 
     <section class="feedback">
       <div class="feedback__inner">
-        <h2>Обратная связь</h2>
+        <h2 class="visually-hidden">Обратная связь</h2>
         <form class="feedback__form  feedback-form" method="post" action="https://echo.htmlacademy.ru">
           <h3>Остались вопросы? Задайте их нам!</h3>
           <p>Мы проконсультируем Вас бесплатно</p>
           <div class="feedback-form__field-contacts">
-            <label for="name">Поле для ввода имени пользователя</label>
+            <label class="visually-hidden" for="user-name">Поле для ввода имени пользователя</label>
             <input type="text" name="user-name" placeholder="Имя" id="user-name" required>
 
-            <label for="phone">Поле для ввода номера телефона пользователя</label>
+            <label class="visually-hidden" for="phone">Поле для ввода номера телефона пользователя</label>
             <input type="tel" name="tel" id="phone" placeholder="Телефон" required>
           </div>
 
           <div class="feedback-form__field-request">
-            <label>Поле для ввода вопросов пользователя</label>
+            <label class="visually-hidden">Поле для ввода вопросов пользователя</label>
             <textarea name="feedback-request" placeholder="Ваш вопрос" required></textarea>
           </div>
 
@@ -159,7 +189,7 @@
             <button class="feedback-form__button  button" type="submit">Задать вопрос</button>
 
             <label tabindex="0">
-              <input type="checkbox" name="user-agreement" checked required>
+              <input class="visually-hidden" type="checkbox" name="user-agreement" checked required>
               <span class="feedback-form__caption">Я согласен на обработку  персональных данных</span>
             </label>
           </div>
@@ -198,9 +228,9 @@
         <h3>Наш офис</h3>
           <ul class="page-footer__contacts-list">
             <li class="page-footer__contacts-item">г. Мытищи, Олимпийский проспект, д.10</li>
-            <li class="page-footer__contacts-item">+7 (495) 589-40-50</li>
-            <li class="page-footer__contacts-item">+7 (925) 003-87-67</li>
-            <li class="page-footer__contacts-item">+7 (926) 926-080-79</li>
+            <li class="page-footer__contacts-item"><a href="tel:+74955894050">+7 (495) 589-40-50</a></li>
+            <li class="page-footer__contacts-item"><a href="tel:+79250038767">+7 (925) 003-87-67</a></li>
+            <li class="page-footer__contacts-item"><a href="tel:+792692608079">+7 (926) 926-080-79</a></li>
           </ul>
       </div>
 
@@ -208,7 +238,7 @@
         <ul class="page-footer__social-links  social-links">
           <li>
             <a class="social-links__link" href="#" title="Наш Фейсбук">
-              <span>Наша группа в Facebook</span>
+              <span class="visually-hidden">Наша группа в Facebook</span>
               <svg width="27" height="27">
                 <use xlink:href="#icon-facebook"></use>
               </svg>
@@ -217,7 +247,7 @@
 
           <li>
             <a class="social-links__link" href="#" title="Нашы Одноклассники">
-              <span>Наша группа в Одноклассниках</span>
+              <span class="visually-hidden">Наша группа в Одноклассниках</span>
               <svg width="27" height="26">
                 <use xlink:href="#icon-odnoklassniki"></use>
               </svg>
@@ -226,7 +256,7 @@
 
           <li>
             <a class="social-links__link" href="#" title="Наш ВКонтакт">
-              <span>Наша группа в ВКонтакте</span>
+              <span class="visually-hidden">Наша группа в ВКонтакте</span>
               <svg width="27" height="26">
                 <use xlink:href="#icon-vk"></use>
               </svg>
@@ -235,13 +265,13 @@
         </ul>
       </div>
 
-      <span class="page-footer__bottom-link  page-footer__bottom-link--rights">Все права защищены</span>
+      <span class="page-footer__bottom-note  page-footer__bottom-note--rights">Все права защищены</span>
 
-      <span class="page-footer__bottom-link  page-footer__bottom-link--service-devices">1999-2018 SD Service Devices</span>
+      <span class="page-footer__bottom-note  page-footer__bottom-note--service-devices">1999-2018 SD Service Devices</span>
 
-      <a class="page-footer__bottom-link  page-footer__bottom-link--confidentiality">Условия конфиденциальности</a>
+      <a class="page-footer__bottom-link  page-footer__bottom-link--confidentiality" href="#">Условия конфиденциальности</a>
 
-      <a class="page-footer__bottom-link  page-footer__bottom-link--developed">Developed by wow studio</a>
+      <span class="page-footer__bottom-note-link    page-footer__bottom-note--developed">Developed by <a class="page-footer__bottom-link" href="#">wow studio</a></span>
     </div>
   </footer>
 
@@ -250,15 +280,15 @@
       <h3>Закажите звонок</h3>
       <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
       <div class="pop-up__form-field-contacts  feedback-form__field-contacts">
-        <label for="name">Поле для ввода имени пользователя</label>
+        <label class="visually-hidden" for="name">Поле для ввода имени пользователя</label>
         <input type="text" name="name" placeholder="Имя" id="name" autofocus required>
 
-        <label for="tel">Поле для ввода номера телефона пользователя</label>
+        <label class="visually-hidden" for="tel">Поле для ввода номера телефона пользователя</label>
         <input type="tel" name="tel" id="tel" placeholder="Телефон" required>
       </div>
 
       <div class="pop-up__form-field-request  feedback-form__field-request">
-        <label>Поле для ввода вопросов пользователя</label>
+        <label class="visually-hidden">Поле для ввода вопросов пользователя</label>
         <textarea name="request" placeholder="Ваш вопрос" required></textarea>
       </div>
 
@@ -266,7 +296,7 @@
         <button class="pop-up__form-button  feedback-form__button  button" type="submit">Отправить</button>
 
         <label tabindex="0">
-          <input type="checkbox" name="user-agreement" checked required>
+          <input class="visually-hidden" type="checkbox" name="user-agreement" checked required>
           <span class="feedback-form__caption">Я согласен на обработку  персональных данных</span>
         </label>
       </div>

@@ -1,11 +1,24 @@
-.social-links span {
-  @include visually-hidden;
-}
-
 .social-links {
   display: flex;
   justify-content: space-between;
   width: 112px;
-
   list-style: none;
+}
+
+.social-links__link {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.social-links__link svg {
+  fill: $color-social;
+}
+
+.social-links__link:hover svg {
+  fill: $color-secondary;
+}
+
+.social-links__link:active svg {
+  fill: $color-main-text;
 }

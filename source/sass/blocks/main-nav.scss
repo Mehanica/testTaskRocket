@@ -1,15 +1,11 @@
 .main-nav {
   width: 60px;
 
-  @media (max-width: $width-desktop) {
+  @media (max-width: $width-tablet) {
     width: 50px;
   }
 
-  @media (max-width: $width-only-mobile) {
+  @media (max-width: $width-mobile) {
     width: 70px;
   }
-}
-
-.main-nav__toggle {
-  @include visually-hidden;
 }

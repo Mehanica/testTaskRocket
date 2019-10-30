@@ -3,14 +3,14 @@
   background-color: $color-secondary;
   background-image: url("../../img/blue-polygon1.svg"), url("../../img/blue-polygon2.svg");
   background-repeat: no-repeat, no-repeat;
-  background-position: right calc(50% + -789px) bottom -22px,right calc(50% + -814px) top 42px;
+  background-position: right calc(50% - 789px) bottom -22px, right calc(50% - 814px) top 42px;
 
-  @media (max-width: $width-desktop) {
+  @media (max-width: $width-tablet) {
     background-image: none;
   }
 
-  @media (max-width: $width-only-mobile) {
-    min-height: 640px;
+  @media (max-width: $width-mobile) {
+    min-height: 639px;
   }
 }
 
@@ -49,7 +49,7 @@
     }
   }
 
-  @media (max-width: $width-desktop) {
+  @media (max-width: $width-tablet) {
     &::before {
       content: none;
     }
@@ -58,10 +58,6 @@
       content: none;
     }
   }
-}
-
-.feedback h2 {
-  @include visually-hidden;
 }
 
 .feedback__form {
@@ -73,13 +69,13 @@
     padding-left: 46.8%;
   }
 
-  @media (max-width: $width-desktop) {
+  @media (max-width: $width-tablet) {
     padding-top: 80px;
     padding-left: 63px;
   }
 
-  @media (max-width: $width-only-mobile) {
-    padding-top: 31px;
+  @media (max-width: $width-mobile) {
+    padding-top: 29px;
     padding-left: 0;
     padding-right: 0;
   }

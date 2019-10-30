@@ -7,7 +7,7 @@
   text-decoration: none;
   background-repeat: no-repeat;
 
-  @media (max-width: $width-desktop) {
+  @media (max-width: $width-tablet) {
     height: 256px;
   }
 
@@ -25,45 +25,53 @@
   }
 }
 
+.product-item a:hover {
+  border: 2px solid $color-secondary;
+}
+
+.product-item a:active h3 {
+  color: $color-secondary;
+}
+
 .product-item--production {
-  background-image: url('../../img/production-desktop.png');
+  background-image: url("../../img/production-desktop.png");
   background-repeat: no-repeat;
   background-size: cover;
 
-  @media (max-width: $width-desktop) {
-    background-image: url('../../img/production-tablet.png');
+  @media (max-width: $width-tablet) {
+    background-image: url("../../img/production-tablet.png");
   }
 
-  @media (max-width: $width-only-mobile) {
-    background-image: url('../../img/production-mobile.png');
+  @media (max-width: $width-mobile) {
+    background-image: url("../../img/production-mobile.png");
   }
 }
 
 .product-item--montage {
-  background-image: url('../../img/montage-desktop.png');
+  background-image: url("../../img/montage-desktop.png");
   background-repeat: no-repeat;
   background-size: cover;
 
-  @media (max-width: $width-desktop) {
-    background-image: url('../../img/montage-tablet.png');
+  @media (max-width: $width-tablet) {
+    background-image: url("../../img/montage-tablet.png");
   }
 
-  @media (max-width: $width-only-mobile) {
-    background-image: url('../../img/montage-mobile.png');
+  @media (max-width: $width-mobile) {
+    background-image: url("../../img/montage-mobile.png");
   }
 }
 
 .product-item--components {
-  background-image: url('../../img/components-desktop.png');
+  background-image: url("../../img/components-desktop.png");
   background-repeat: no-repeat;
   background-size: cover;
 
-  @media (max-width: $width-desktop) {
-    background-image: url('../../img/components-tablet.png');
+  @media (max-width: $width-tablet) {
+    background-image: url("../../img/components-tablet.png");
   }
 
-  @media (max-width: $width-only-mobile) {
-    background-image: url('../../img/components-mobile.png');
+  @media (max-width: $width-mobile) {
+    background-image: url("../../img/components-mobile.png");
   }
 }
 
@@ -72,17 +80,17 @@
   top: 50px;
   left: 44px;
   width: 173px;
-  font-family: "Roboto Condensed", BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
-  font-size: $font-size-small;
+  font-family: $font-secondary;
+  font-size: 20px;
   font-weight: 400;
   line-height: 30px;
   color: $color-main;
 
-  @media (max-width: $width-desktop) {
+  @media (max-width: $width-tablet) {
     top: 40px;
   }
 
-  @media (max-width: $width-only-mobile) {
+  @media (max-width: $width-mobile) {
     top: 21px;
     left: 35px;
   }
@@ -91,7 +99,7 @@
 .product-item--components h3 {
   top: 50px;
 
-  @media (max-width: $width-only-mobile) {
+  @media (max-width: $width-mobile) {
     top: 31px;
   }
 }

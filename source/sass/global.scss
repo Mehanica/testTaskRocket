@@ -3,8 +3,8 @@ body {
   flex-direction: column;
   height: 100%;
   min-width: 320px;
-  font-family: "PTMono", BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
-  font-size: $font-size-main;
+  font-family: $font-main;
+  font-size: 16px;
   font-weight: 400;
   font-style: normal;
   color: $color-main-text;
@@ -28,4 +28,17 @@ html {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
 }
