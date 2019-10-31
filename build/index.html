@@ -120,8 +120,6 @@
 
       <a class="page-header__callback-button  button">заказать звонок</a>
     </div>
-
-
   </header>
 
   <main class="page-main">
@@ -130,9 +128,7 @@
         <h2>Печатные <br>платы</h2>
         <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
         <a class="promo-content__button  button" href="#">Получить бесплатную консультацию<span>бесплатная консультация</span></a>
-        <div class="promo-content__photo-wrap">
-          <img src="img/computer-boards-desktop.png" alt="фото товара">
-        </div>
+        <button class="promo-content__button-scroll">Скролл вниз</button>
       </div>
     </section>
 
@@ -184,8 +180,8 @@
 
       <div class="advantages__about-company  about-company">
         <h2>О компании</h2>
-        <p class="about-company__first-note">Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
-        <p class="about-company__second-note">Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог <span class="about-company_note-hidden">(РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</span></p>
+        <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
+        <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог <span class="about-company_note-hidden">(РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</span></p>
         <a class="about-company__button  button" href="#">Подробнее</a>
       </div>
     </section>
@@ -217,27 +213,30 @@
 
     <section class="feedback">
       <div class="feedback__inner">
-        <h2 class="visually-hidden">Обратная связь</h2>
-        <form class="feedback__form  feedback-form" method="post" action="https://echo.htmlacademy.ru">
-          <h3>Остались вопросы? Задайте их нам!</h3>
-          <p>Мы проконсультируем Вас бесплатно</p>
-          <div class="feedback-form__field-contacts">
-            <label class="visually-hidden" for="user-name">Поле для ввода имени пользователя</label>
-            <input type="text" name="user-name" placeholder="Имя" id="user-name" required="">
+        <h2>Остались вопросы? Задайте их нам!</h2>
+        <p>Мы проконсультируем Вас бесплатно</p>
+        <form class="feedback-form" method="post" action="https://echo.htmlacademy.ru">
+          <div class="feedback-form__field-contacts-wrapper">
+            <div class="feedback-form__field-contacts">
+              <label class="visually-hidden" for="user-name">Имя</label>
+              <input type="text" name="user-name" placeholder="Имя" id="user-name" required="">
+            </div>
 
-            <label class="visually-hidden" for="phone">Поле для ввода номера телефона пользователя</label>
-            <input type="tel" name="tel" id="phone" placeholder="Телефон" required="">
-          </div>
+            <div class="feedback-form__field-contacts">
+              <label class="visually-hidden" for="phone">Телефон</label>
+              <input type="tel" name="tel" id="phone" placeholder="Телефон" required="">
+            </div>
 
-          <div class="feedback-form__field-request">
-            <label class="visually-hidden">Поле для ввода вопросов пользователя</label>
-            <textarea name="feedback-request" placeholder="Ваш вопрос" required=""></textarea>
-          </div>
+            <div class="feedback-form__field-request">
+              <label class="visually-hidden">Ваш вопрос</label>
+              <textarea name="feedback-request" placeholder="Ваш вопрос" required=""></textarea>
+            </div>
+        </div>
 
           <div class="feedback-form__button-and-checkbox-wrapper">
             <button class="feedback-form__button  button" type="submit">Задать вопрос</button>
 
-            <label tabindex="0">
+            <label>
               <input class="visually-hidden" type="checkbox" name="user-agreement" checked="" required="">
               <span class="feedback-form__caption">Я согласен на обработку  персональных данных</span>
             </label>
@@ -325,9 +324,9 @@
   </footer>
 
   <section class="pop-up">
+    <h2>Закажите звонок</h2>
+    <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
     <form class="pop-up__form feedback-form" action="https://echo.htmlacademy.ru">
-      <h3>Закажите звонок</h3>
-      <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
       <div class="pop-up__form-field-contacts  feedback-form__field-contacts">
         <label class="visually-hidden" for="name">Поле для ввода имени пользователя</label>
         <input type="text" name="name" placeholder="Имя" id="name" autofocus="" required="">

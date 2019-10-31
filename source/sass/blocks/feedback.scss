@@ -1,4 +1,5 @@
 .feedback {
+  padding-top: 92px;
   min-height: 670px;
   background-color: $color-secondary;
   background-image: url("../../img/blue-polygon1.svg"), url("../../img/blue-polygon2.svg");
@@ -6,10 +7,12 @@
   background-position: right calc(50% - 789px) bottom -22px, right calc(50% - 814px) top 42px;
 
   @media (max-width: $width-tablet) {
+    padding-top: 79px;
     background-image: none;
   }
 
   @media (max-width: $width-mobile) {
+    padding-top: 29px;
     min-height: 639px;
   }
 }
@@ -28,6 +31,7 @@
     height: 881px;
     background-image: url("../../img/triangles-white.svg");
     background-repeat: no-repeat;
+    pointer-events: none;
 
     @media (max-width: 1373px) {
       right: 492px;
@@ -37,7 +41,7 @@
   &::after {
     content: "";
     position: absolute;
-    top: 161px;
+    top: 69px;
     right: 816px;
     width: 511px;
     height: 288px;
@@ -60,8 +64,58 @@
   }
 }
 
-.feedback__form {
-  padding-top: 92px;
+.feedback h2 {
+  margin-left: 50.8%;
+  padding-bottom: 11px;
+  font-family: $font-secondary;
+  font-size: 36px;
+  line-height: 50.63px;
+  font-weight: 400;
+  color: $color-main;
+
+  @media (max-width: 1300px) {
+    margin-left: 46.8%;
+  }
+
+  @media (max-width: $width-tablet) {
+    padding-bottom: 18px;
+    margin-left: 63px;
+    font-size: 32px;
+    line-height: 45px;
+  }
+
+  @media (max-width: $width-mobile) {
+    padding-bottom: 14px;
+    margin-left: 0;
+    font-size: 28px;
+    line-height: 39px;
+  }
+}
+
+.feedback p {
+  margin-left: 50.8%;
+  padding-left: 4px;
+  padding-bottom: 53px;
+  color: $color-main;
+
+  @media (max-width: 1300px) {
+    margin-left: 46.8%;
+  }
+
+  @media (max-width: $width-tablet) {
+    padding-bottom: 56px;
+    margin-left: 63px;
+  }
+
+  @media (max-width: $width-mobile) {
+    padding-bottom: 26px;
+    margin-left: 0;
+    padding-left: 0;
+    line-height: 22px;
+  }
+}
+
+.feedback form {
   padding-left: 50.8%;
   padding-right: 122px;
 
@@ -70,13 +124,16 @@
   }
 
   @media (max-width: $width-tablet) {
-    padding-top: 80px;
     padding-left: 63px;
+    padding-right: 62px;
   }
 
   @media (max-width: $width-mobile) {
-    padding-top: 29px;
     padding-left: 0;
     padding-right: 0;
   }
+}
+
+.feedback input[type="checkbox"]:focus + span {
+  outline: 1px solid $color-main;
 }
