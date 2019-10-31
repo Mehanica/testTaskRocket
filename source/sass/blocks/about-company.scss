@@ -6,39 +6,28 @@
   min-height: 418px;
   padding-bottom: 23px;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 5px;
-    left: 102px;
-    width: 220px;
-    height: 317px;
-    background-image: url("../../img/number.png");
-    background-repeat: no-repeat;
+  background-image: url("../../img/number@1x.png");
+  background-repeat: no-repeat;
+  background-size: 220px 317px;
+  background-position: left 101px top 4px;
 
-    @media (max-width: $width-tablet) {
-      top: 1px;
-      left: -8px;
-      width: 251px;
-      height: 362px;
-      background-size: contain;
-    }
-
-    @media (max-width: $width-mobile) {
-      content: none;
-    }
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../img/number@2x.png")
   }
 
   @media (max-width: $width-tablet) {
     margin-top: 22px;
     padding-left: 210px;
     padding-right: 25px;
+    background-size: 251px 362px;
+    background-position: left -9px top 0px;
   }
 
   @media (max-width: $width-mobile) {
     margin-top: 39px;
     padding-left: 15px;
     padding-right: 15px;
+    background-image: none;
   }
 }
 

@@ -20,8 +20,20 @@
 
 .pop-up__form {
   padding-top: 29px;
-
   background-color: $color-secondary;
+  @media (max-width: 1300px) {
+    padding-left: 46.8%;
+  }
+
+  @media (max-width: $width-tablet) {
+    padding-left: 63px;
+    padding-right: 62px;
+  }
+
+  @media (max-width: $width-mobile) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .pop-up h2 {
@@ -99,4 +111,8 @@
   background: 0 0;
   cursor: pointer;
   outline: 0;
+}
+
+.pop-up input[type="checkbox"]:focus + span {
+  outline: 1px solid $color-main;
 }

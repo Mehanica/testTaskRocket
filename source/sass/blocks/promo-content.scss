@@ -1,24 +1,28 @@
 .promo-content {
   position: relative;
   min-height: 878px;
-  background-image: url("../../img/promo-background.png"), url("../../img/triangles-white.svg"), url("../../img/computer-boards-desktop.png");
-  background-size: cover, 1920px 881px, auto;
-  background-position: center , right top , right 177px top 258px;
+  background-image: url("../../img/computer-boards-desktop@1x.png"), url("../../img/triangles-white@1x.png"), url("../../img/promo-background@1x.png");
+  background-size: 705px 515px, 1920px 881px, cover;
+  background-position: right 177px top 258px, right top, center;
   background-repeat: no-repeat;
   background-color: $color-background-dark;
   overflow: hidden;
   padding-top: 317px;
 
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../img/computer-boards-desktop@2x.png"), url("../../img/triangles-white@2x.png"), url("../../img/promo-background@2x.png");
+  }
+
   @media (max-width: $width-tablet) {
-    background-size: cover, 1514px 749px, 465px 340px;
-    background-position: center, right -373px top -160px, right -206px top 113px;
+    background-size: 465px 340px, 1514px 749px, cover;
+    background-position: right -206px top 113px, right -373px top -160px, center;
     min-height: 686px;
     padding-top: 190px;
   }
 
   @media (max-width: $width-mobile) {
-    background-size: cover, 1446px 716px, 301px 220px;
-    background-position: center, right -502px top -161px, right -7px top 92px;
+    background-size: 301px 220px, 1446px 716px, cover;
+    background-position: right -7px top 92px, right -502px top -161px, center;
     min-height: 647px;
     padding-top: 287px
   }
@@ -115,7 +119,7 @@
 .promo-content__button {
   position: relative;
   width: 407px;
-  min-height: 55px;
+  height: 55px;
   padding-left: 44px;
   padding-right: 27px;
   margin-left: 95px;
@@ -193,4 +197,8 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+
+  @media (max-width: $width-tablet) {
+    display: none;
+  }
 }

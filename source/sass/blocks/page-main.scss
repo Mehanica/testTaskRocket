@@ -1,13 +1,13 @@
 .page-main {
   flex-grow: 1;
   transform: translateY(-135px);
-  margin-bottom: -135px;
+  // margin-bottom: -135px;
 
   @media (max-width: $width-tablet) {
-    margin-bottom: -141px;
+    // margin-bottom: -141px;
   }
 
   @media (max-width: $width-mobile) {
-    margin-bottom: -135px;
+    // margin-bottom: -135px;
   }
 }
