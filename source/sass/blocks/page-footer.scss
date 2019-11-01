@@ -151,7 +151,7 @@
       height: 1px;
       padding-left: 10px;
       background-color: #626962;
-      opacity: .2;
+      opacity: 0.2;
     }
 
     &::after {
@@ -202,18 +202,14 @@
     &::after {
       content: "";
       position: absolute;
-      top: 0;
+      top: auto;
+      bottom: 0;
       left: -15px;
       width: calc(100% + 30px);
       height: 1px;
       padding-left: 10px;
       background-color: #626962;
-      opacity: .2;
-    }
-
-    &::after {
-      top: auto;
-      bottom: 0;
+      opacity: 0.2;
     }
   }
 }
@@ -475,7 +471,6 @@
 
 .page-footer h3 {
   @media (max-width: $width-mobile) {
-
     &::before {
       content: "";
       position: absolute;
@@ -491,7 +486,6 @@
 
 .page-footer .jsFooterTitleOpened {
   @media (max-width: $width-mobile) {
-
     &::before {
       content: none;
     }

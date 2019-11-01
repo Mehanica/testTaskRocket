@@ -1066,7 +1066,7 @@ img {
       padding-left: 210px;
       padding-right: 25px;
       background-size: 251px 362px;
-      background-position: left -9px top 0px; } }
+      background-position: left -9px top 0; } }
   @media (max-width: 767px) {
     .about-company {
       margin-top: 39px;
@@ -1089,16 +1089,12 @@ img {
       line-height: 39.38px; } }
 
 .about-company p {
+  margin-bottom: 24px;
   line-height: 21.5px; }
   @media (max-width: 767px) {
     .about-company p {
+      margin-bottom: 35px;
       line-height: 22.3px; } }
-
-.about-company p {
-  margin-bottom: 24px; }
-  @media (max-width: 767px) {
-    .about-company p {
-      margin-bottom: 35px; } }
 
 @media (max-width: 1023px) {
   .about-company_note-hidden {
@@ -1314,7 +1310,7 @@ img {
   position: relative;
   background-image: url("../../img/paper-airplane@1x.png"), url("../../img/triangles-white@1x.png");
   background-size: 511px 288px, 1920px 881px;
-  background-position: left 107px top 69px,right 612px top -270px;
+  background-position: left 107px top 69px, right 612px top -270px;
   background-repeat: no-repeat;
   overflow: hidden; }
   @media (max-width: 1023px) {
@@ -1788,7 +1784,7 @@ img {
         height: 1px;
         padding-left: 10px;
         background-color: #626962;
-        opacity: .2; }
+        opacity: 0.2; }
       .page-footer__navigation::after {
         top: auto;
         bottom: 0; } }
@@ -1841,16 +1837,14 @@ img {
       .page-footer__contacts::after {
         content: "";
         position: absolute;
-        top: 0;
+        top: auto;
+        bottom: 0;
         left: -15px;
         width: calc(100% + 30px);
         height: 1px;
         padding-left: 10px;
         background-color: #626962;
-        opacity: .2; }
-      .page-footer__contacts::after {
-        top: auto;
-        bottom: 0; } }
+        opacity: 0.2; } }
 
 .page-footer__social {
   position: absolute;

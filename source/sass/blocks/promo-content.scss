@@ -24,7 +24,7 @@
     background-size: 301px 220px, 1446px 716px, cover;
     background-position: right -7px top 92px, right -502px top -161px, center;
     min-height: 647px;
-    padding-top: 287px
+    padding-top: 287px;
   }
 }
 
@@ -54,7 +54,7 @@
 
   @media (max-width: $width-mobile) {
     padding-left: 0;
-    padding-right: 0;;
+    padding-right: 0;
     padding-bottom: 29px;
     letter-spacing: 2.5px;
     font-size: 40px;

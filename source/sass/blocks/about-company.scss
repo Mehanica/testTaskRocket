@@ -12,7 +12,7 @@
   background-position: left 101px top 4px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../../img/number@2x.png")
+    background-image: url("../../img/number@2x.png");
   }
 
   @media (max-width: $width-tablet) {
@@ -20,7 +20,7 @@
     padding-left: 210px;
     padding-right: 25px;
     background-size: 251px 362px;
-    background-position: left -9px top 0px;
+    background-position: left -9px top 0;
   }
 
   @media (max-width: $width-mobile) {
@@ -49,18 +49,12 @@
 }
 
 .about-company p {
+  margin-bottom: 24px;
   line-height: 21.5px;
 
   @media (max-width: $width-mobile) {
-    line-height: 22.3px;
-  }
-}
-
-.about-company p {
-  margin-bottom: 24px;
-
-  @media (max-width: $width-mobile) {
     margin-bottom: 35px;
+    line-height: 22.3px;
   }
 }
 

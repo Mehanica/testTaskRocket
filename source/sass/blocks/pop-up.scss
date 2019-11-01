@@ -21,6 +21,7 @@
 .pop-up__form {
   padding-top: 29px;
   background-color: $color-secondary;
+
   @media (max-width: 1300px) {
     padding-left: 46.8%;
   }
@@ -43,7 +44,6 @@
   line-height: 39px;
   font-weight: 400;
   color: $color-main;
-
 }
 
 .pop-up p {

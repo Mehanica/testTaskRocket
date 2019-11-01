@@ -23,12 +23,12 @@
   position: relative;
   background-image: url("../../img/paper-airplane@1x.png"), url("../../img/triangles-white@1x.png");
   background-size: 511px 288px, 1920px 881px;
-  background-position: left 107px top 69px,right 612px top -270px;
+  background-position: left 107px top 69px, right 612px top -270px;
   background-repeat: no-repeat;
   overflow: hidden;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image:  url("../../img/paper-airplane@2x.png"), url("../../img/triangles-white@2x.png");
+    background-image: url("../../img/paper-airplane@2x.png"), url("../../img/triangles-white@2x.png");
   }
 
   @media (max-width: $width-tablet) {
@@ -150,24 +150,17 @@
 .feedback__field-contacts input {
   min-height: 50px;
 
-  @media (max-width: $width-tablet) {
-  }
-
   @media (max-width: $width-mobile) {
     margin-bottom: 32px;
     width: auto;
   }
 }
 
-.feedback__field-contacts-wrapper{
+.feedback__field-contacts-wrapper {
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
   justify-content: space-between;
-
-  @media (max-width: $width-mobile) {
-
-  }
 }
 
 ::placeholder {

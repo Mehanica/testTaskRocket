@@ -1,6 +1,7 @@
 .logo {
   display: flex;
   cursor: pointer;
+
   @media (max-width: $width-mobile) {
     margin-right: 90px;
   }

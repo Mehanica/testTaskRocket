@@ -81,4 +81,3 @@ if (feedbackButton && popup && closeButton && overlay && form && body && PhoneFi
     var mask = IMask(element, maskOptions);
   });
 }
-
