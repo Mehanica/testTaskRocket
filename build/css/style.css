@@ -1883,8 +1883,7 @@ img {
   line-height: 24px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #1b2d37;
-  opacity: 0.5; }
+  color: #1b2d37; }
   @media (max-width: 1285px) {
     .page-footer__bottom-link,
     .page-footer__bottom-note-link,
@@ -1897,6 +1896,10 @@ img {
     .page-footer__bottom-note {
       margin-top: 0;
       padding-bottom: 0; } }
+
+.page-footer__bottom-note-link,
+.page-footer__bottom-link--confidentiality {
+  opacity: 0.5; }
 
 .page-footer__bottom-link {
   cursor: pointer; }
@@ -2018,7 +2021,10 @@ img {
 .page-footer__contacts-item a {
   font-size: 15px;
   line-height: 25px;
-  color: #1b2d37;
+  color: #1b2d37; }
+
+.page-footer__contacts-item,
+.page-footer__navigation-item {
   opacity: 0.5; }
 
 @media (max-width: 767px) {

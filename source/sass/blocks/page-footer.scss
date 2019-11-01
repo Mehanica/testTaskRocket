@@ -248,7 +248,7 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $color-background-dark;
-  opacity: 0.5;
+  // opacity: 0.5;
 
   @media (max-width: 1285px) {
     margin-top: 14px;
@@ -259,6 +259,11 @@
     margin-top: 0;
     padding-bottom: 0;
   }
+}
+
+.page-footer__bottom-note-link,
+.page-footer__bottom-link--confidentiality {
+  opacity: 0.5;
 }
 
 .page-footer__bottom-link {
@@ -399,6 +404,10 @@
   font-size: 15px;
   line-height: 25px;
   color: $color-background-dark;
+}
+
+.page-footer__contacts-item,
+.page-footer__navigation-item {
   opacity: 0.5;
 }
 
