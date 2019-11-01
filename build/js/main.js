@@ -7,10 +7,10 @@ var closeButton = popup.querySelector('.pop-up__close');
 var overlay = body.querySelector('.overlay');
 var form = popup.querySelector('.pop-up__form');
 var footerTitles = body.querySelectorAll('.page-footer h3');
-var PhoneField = document.getElementsByName('tel');
+var phoneFields = document.getElementsByName('tel');
 
 
-if (feedbackButton && popup && closeButton && overlay && form && body && PhoneField && footerTitles) {
+if (feedbackButton && popup && closeButton && overlay && form && body && phoneFields && footerTitles) {
   footerTitles.forEach(function (title) {
     title.addEventListener('click', function () {
       title.classList.toggle('jsFooterTitleOpened');
@@ -73,11 +73,15 @@ if (feedbackButton && popup && closeButton && overlay && form && body && PhoneFi
     }
   });
 
+  /* eslint-disable */
+
   var maskOptions = {
-    mask: '+{7}(000)000-00-00'
+    mask: '+{7} (000) 000-00-00'
   };
 
-  [].forEach.call(PhoneField, function (element) {
+  [].forEach.call(phoneFields, function (element) {
     var mask = IMask(element, maskOptions);
   });
+
+  /* eslint-enable */
 }
