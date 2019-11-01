@@ -96,16 +96,17 @@
   </div>
 
   <header class="page-header">
-    <div class="page-header__logo  logo">
-      <svg width="52" height="52">
-        <use xlink:href="#icon-logo"></use>
-      </svg>
+    <a class="page-header__logo  logo">
+      <svg width="204" height="52">
+        <g id="icon-logo" width="52" height="52" viewBox="0 0 52 52"></g>
+        <g id="icon-Smart-Device-Logo" width="133" height="20" viewBox="0 0 133 20"></g>
+        <g id="icon-smart-device-logo-note"></g>
 
-      <div class="logo__title">
-        <h1>Smart Device</h1>
-        <span>умные технологии</span>
-      </div>
-    </div>
+        <use class="icon1" xlink:href="#icon-logo" x="4" y="1"></use>
+        <use class="icon2" xlink:href="#icon-Smart-Device-Logo" width="133" height="20" x="68" y="10"></use>
+        <use class="icon3" xlink:href="#icon-smart-device-logo-note" width="105" height="10" x="68" y="40"></use>
+      </svg>
+    </a>
 
     <nav class="main-nav">
       <button class="main-nav__toggle  visually-hidden" type="button">Открыть меню</button>
@@ -263,16 +264,17 @@
 
   <footer class="page-footer">
     <div class="page-footer__inner">
-      <div class="page-footer__logo  logo">
-        <svg width="52" height="52">
-          <use xlink:href="#icon-logo"></use>
-        </svg>
+      <a class="page-footer__logo  logo">
+        <svg width="216" height="52">
+          <g id="icon-logo" width="52" height="52"></g>
+          <g id="icon-Service-Device-Logo" width="147" height="20" viewBox="0 0 147 20"></g>
+          <g id="icon-smart-device-logo-note"></g>
 
-        <div class="logo__title  logo__title--footer">
-          <h2>Service Device
-          <span>умные технологии</span>
-        </h2></div>
-      </div>
+          <use xlink:href="#icon-logo" x="-83" y="0"></use>
+          <use xlink:href="#icon-Service-Device-Logo" width="147" height="20" viewBox="0 0 147 20" x="68" y="0"></use>
+          <use xlink:href="#icon-smart-device-logo-note" width="105" height="10" x="68" y="40"></use>
+        </svg>
+      </a>
 
       <nav class="page-footer__navigation">
         <h3>Разделы сайта</h3>
@@ -343,16 +345,17 @@
     <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
     <form class="pop-up__form" action="https://echo.htmlacademy.ru">
       <div class="pop-up__form-field-contacts  feedback__field-contacts">
-        <label class="visually-hidden" for="name">Поле для ввода имени пользователя</label>
+        <label class="visually-hidden" for="name">Имя</label>
         <input type="text" name="name" placeholder="Имя" id="name" autofocus="" required="">
+      </div>
 
-        <label class="visually-hidden" for="tel">Поле для ввода номера телефона пользователя</label>
-          <div class="feedback__button-and-checkbox-wrapper">
+      <div class="pop-up__form-field-contacts  feedback__field-contacts">
+        <label class="visually-hidden" for="tel">Телефон</label>
         <input type="tel" name="tel" id="tel" placeholder="Телефон" pattern="[\+]\d{9}" required="">
       </div>
 
       <div class="pop-up__form-field-request  feedback__field-request">
-        <label class="visually-hidden">Поле для ввода вопросов пользователя</label>
+        <label class="visually-hidden">Ваш вопрос</label>
         <textarea name="request" placeholder="Ваш вопрос" required=""></textarea>
       </div>
 
@@ -364,7 +367,7 @@
           <span class="feedback__caption">Я согласен на обработку  персональных данных</span>
         </label>
       </div>
-    </div></form>
+    </form>
 
     <button class="pop-up__close" type="button">Закрыть окно
       <svg width="17" height="17">
@@ -373,7 +376,8 @@
     </button>
   </section>
   <div class="overlay"></div>
-
+  <script src="https://unpkg.com/imask"></script>
   <script src="js/main.js"></script>
+
 </body>
 </html>

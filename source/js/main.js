@@ -7,14 +7,16 @@ var closeButton = popup.querySelector('.pop-up__close');
 var overlay = body.querySelector('.overlay');
 var form = popup.querySelector('.pop-up__form');
 var footerTitles = body.querySelectorAll('.page-footer h3');
+var PhoneField = document.getElementsByName('tel');
 
-footerTitles.forEach(function (title) {
-  title.addEventListener('click', function () {
-    title.classList.toggle('jsFooterTitleOpened');
+
+if (feedbackButton && popup && closeButton && overlay && form && body && PhoneField && footerTitles) {
+  footerTitles.forEach(function (title) {
+    title.addEventListener('click', function () {
+      title.classList.toggle('jsFooterTitleOpened');
+    });
   });
-});
 
-if (feedbackButton && popup && closeButton && overlay && form && body) {
   var feedBackButtonClickHandler = function (evt) {
     evt.preventDefault();
     overlay.classList.add('overlay--active');
@@ -70,4 +72,13 @@ if (feedbackButton && popup && closeButton && overlay && form && body) {
       }
     }
   });
+
+  var maskOptions = {
+    mask: '+{7}(000)000-00-00'
+  };
+
+  [].forEach.call(PhoneField, function (element) {
+    var mask = IMask(element, maskOptions);
+  });
 }
+

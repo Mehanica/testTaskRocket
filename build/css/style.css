@@ -554,7 +554,8 @@ img {
 .logo {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  cursor: pointer; }
   @media (max-width: 767px) {
     .logo {
       margin-right: 90px; } }
@@ -564,25 +565,16 @@ img {
   @media (max-width: 767px) {
     .logo svg {
       margin-left: 2px;
-      width: 38px;
-      height: 38px; } }
+      height: 38px;
+      width: 38px; } }
 
-.logo__title {
-  padding-top: 5px;
-  width: 140px; }
-  @media (max-width: 1023px) {
-    .logo__title {
-      margin-right: 350px; } }
-  @media (max-width: 767px) {
-    .logo__title {
-      display: none; } }
+.logo .icon1 {
+  right: 1px; }
 
-.logo__title h1,
-.logo__title h2 {
-  margin: 0;
-  width: 150px;
-  font-family: "Roboto Condensed", "Segoe UI", "Helvetica Neue", sans-serif;
-  font-size: 25px; }
+@media (max-width: 767px) {
+  .logo .icon2,
+  .logo .icon3 {
+    display: none; } }
 
 @media (max-width: 1023px) {
   .logo__title--footer {
@@ -1720,7 +1712,7 @@ img {
 
 .page-footer__logo {
   padding-top: 20px;
-  margin-right: 10%;
+  margin-right: 8%;
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1; }
@@ -1732,7 +1724,7 @@ img {
       margin-right: 15%; } }
   @media (max-width: 1083px) {
     .page-footer__logo {
-      margin-right: 10%; } }
+      margin-right: 8%; } }
   @media (max-width: 1023px) {
     .page-footer__logo {
       margin-right: 0;
@@ -1744,9 +1736,6 @@ img {
       margin-top: auto;
       margin-left: auto;
       margin-right: auto; } }
-
-.page-footer__logo h2 {
-  color: #203c42; }
 
 .page-footer__navigation {
   position: relative;
