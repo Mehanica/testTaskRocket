@@ -1726,7 +1726,7 @@ img {
   @media (max-width: 1023px) {
     .page-footer__logo {
       margin-right: 0;
-      padding-right: 77px;
+      padding-right: 65px;
       margin-bottom: 24px; } }
   @media (max-width: 767px) {
     .page-footer__logo {
