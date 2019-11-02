@@ -799,6 +799,10 @@ img {
   @media (max-width: 1023px) {
     .promo-content__button-scroll {
       display: none; } }
+  .promo-content__button-scroll:hover {
+    opacity: 1; }
+  .promo-content__button-scroll:active {
+    opacity: 0.8; }
 
 .button {
   display: -webkit-box;
