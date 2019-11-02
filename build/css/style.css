@@ -1898,7 +1898,8 @@ img {
       padding-bottom: 0; } }
 
 .page-footer__bottom-note-link,
-.page-footer__bottom-link--confidentiality {
+.page-footer__bottom-link--confidentiality,
+.page-footer__bottom-note {
   opacity: 0.5; }
 
 .page-footer__bottom-link {
