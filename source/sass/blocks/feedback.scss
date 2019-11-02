@@ -2,9 +2,9 @@
   padding-top: 92px;
   min-height: 670px;
   background-color: $color-secondary;
-  background-image: url("../../img/blue-polygon1.svg"), url("../../img/blue-polygon2.svg");
-  background-repeat: no-repeat, no-repeat;
-  background-position: right calc(50% - 789px) bottom -22px, right calc(50% - 814px) top 42px;
+  background-image:  url("../../img/triangles-white@1x.png"), url("../../img/blue-polygon1.svg"), url("../../img/blue-polygon2.svg");
+  background-repeat: no-repeat;
+  background-position: right calc(50% + 855px) top -178px, right calc(50% - 789px) bottom -22px, right calc(50% - 814px) top 42px;
 
   @media (max-width: $width-tablet) {
     padding-top: 79px;
@@ -21,14 +21,14 @@
   @include centering;
 
   position: relative;
-  background-image: url("../../img/paper-airplane@1x.png"), url("../../img/triangles-white@1x.png");
+  background-image: url("../../img/paper-airplane@1x.png");
   background-size: 511px 288px, 1920px 881px;
-  background-position: left 107px top 69px, right 612px top -270px;
+  background-position: left 107px top 69px;
   background-repeat: no-repeat;
   overflow: hidden;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../../img/paper-airplane@2x.png"), url("../../img/triangles-white@2x.png");
+    background-image: url("../../img/paper-airplane@2x.png");
   }
 
   @media (max-width: $width-tablet) {
