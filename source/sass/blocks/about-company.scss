@@ -58,9 +58,17 @@
   }
 }
 
-.about-company_note-hidden {
+.about-company__note-hidden {
   @media (max-width: $width-tablet) {
     @include visually-hidden;
+  }
+}
+
+.about-company__etc {
+  display: none;
+
+  @media (max-width: $width-tablet) {
+    display: inline;
   }
 }
 

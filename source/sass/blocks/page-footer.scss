@@ -39,7 +39,7 @@
   &::after {
     content: "";
     position: absolute;
-    bottom: 38px;
+    bottom: 52px;
     width: 100%;
     height: 1px;
     background-color: $color-grey;
@@ -51,7 +51,7 @@
 
     @media (max-width: $width-tablet) {
       min-height: auto;
-      bottom: 66px;
+      bottom: 60px;
       margin-top: -141px;
     }
 
@@ -243,6 +243,7 @@
 .page-footer__bottom-note-link,
 .page-footer__bottom-note {
   margin-top: 45px;
+  margin-bottom: 14px;
   font-size: 13px;
   line-height: 24px;
   letter-spacing: 0.04em;
@@ -252,7 +253,6 @@
 
   @media (max-width: 1285px) {
     margin-top: 14px;
-    padding-bottom: 14px;
   }
 
   @media (max-width: $width-tablet) {
@@ -269,6 +269,7 @@
 
 .page-footer__bottom-link {
   cursor: pointer;
+  // margin-bottom: 14px;
 }
 
 .page-footer__bottom-link:hover {
@@ -321,7 +322,6 @@
   }
 
   @media (max-width: $width-tablet) {
-    padding-bottom: 21px;
     padding-top: 29px;
   }
 
@@ -329,6 +329,7 @@
     margin: 0 auto;
     padding-top: 29px;
     padding-right: 0;
+    margin-bottom: 19px;
   }
 }
 
@@ -365,11 +366,6 @@
     padding-left: 0;
     padding-top: 29px;
     padding-bottom: 29px;
-
-    // &::before {
-    //   content: "";
-
-    // }
 
     &::after {
       content: "";
@@ -452,6 +448,10 @@
 
 .page-footer__navigation-item--second-column {
   margin-top: 64px;
+
+  @media (max-width: 1284px) {
+    margin-top: 0;
+  }
 
   @media (max-width: $width-tablet) {
     margin-top: 0;

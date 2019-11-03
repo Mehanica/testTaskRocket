@@ -1103,7 +1103,7 @@ img {
       line-height: 22.3px; } }
 
 @media (max-width: 1023px) {
-  .about-company_note-hidden {
+  .about-company__note-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -1115,6 +1115,12 @@ img {
             clip-path: inset(100%);
     clip: rect(0, 0, 0, 0);
     overflow: hidden; } }
+
+.about-company__etc {
+  display: none; }
+  @media (max-width: 1023px) {
+    .about-company__etc {
+      display: inline; } }
 
 .about-company__button {
   margin-top: 40px;
@@ -1661,7 +1667,7 @@ img {
   .page-footer::after {
     content: "";
     position: absolute;
-    bottom: 38px;
+    bottom: 52px;
     width: 100%;
     height: 1px;
     background-color: #626962;
@@ -1672,7 +1678,7 @@ img {
     @media (max-width: 1023px) {
       .page-footer::after {
         min-height: auto;
-        bottom: 66px;
+        bottom: 60px;
         margin-top: -141px; } }
     @media (max-width: 767px) {
       .page-footer::after {
@@ -1883,6 +1889,7 @@ img {
 .page-footer__bottom-note-link,
 .page-footer__bottom-note {
   margin-top: 45px;
+  margin-bottom: 14px;
   font-size: 13px;
   line-height: 24px;
   letter-spacing: 0.04em;
@@ -1892,8 +1899,7 @@ img {
     .page-footer__bottom-link,
     .page-footer__bottom-note-link,
     .page-footer__bottom-note {
-      margin-top: 14px;
-      padding-bottom: 14px; } }
+      margin-top: 14px; } }
   @media (max-width: 1023px) {
     .page-footer__bottom-link,
     .page-footer__bottom-note-link,
@@ -1957,13 +1963,13 @@ img {
       padding-right: 80px; } }
   @media (max-width: 1023px) {
     .page-footer__bottom-link--confidentiality {
-      padding-bottom: 21px;
       padding-top: 29px; } }
   @media (max-width: 767px) {
     .page-footer__bottom-link--confidentiality {
       margin: 0 auto;
       padding-top: 29px;
-      padding-right: 0; } }
+      padding-right: 0;
+      margin-bottom: 19px; } }
 
 .page-footer__bottom-note--developed {
   -webkit-box-ordinal-group: 9;
@@ -2076,6 +2082,9 @@ img {
 
 .page-footer__navigation-item--second-column {
   margin-top: 64px; }
+  @media (max-width: 1284px) {
+    .page-footer__navigation-item--second-column {
+      margin-top: 0; } }
   @media (max-width: 1023px) {
     .page-footer__navigation-item--second-column {
       margin-top: 0; } }
