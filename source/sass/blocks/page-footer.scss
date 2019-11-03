@@ -45,6 +45,10 @@
     background-color: $color-grey;
     opacity: 0.2;
 
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      margin-bottom: -77px;
+    }
+
     @media (max-width: 1285px) {
       bottom: 51px;
     }
@@ -115,8 +119,8 @@
   position: relative;
   margin-right: -1%;
   width: 598px;
-  column-count: 2;
-  column-width: 240px;
+  // column-count: 2;
+  // column-width: 240px;
   order: 2;
 
   @media (max-width: 1285px) {
@@ -158,6 +162,16 @@
       top: auto;
       bottom: 0;
     }
+  }
+}
+
+.page-footer__navigation-inner {
+  display: flex;
+  justify-content: space-between;
+  width: 429px;
+
+  @media (max-width: 1284px) {
+    flex-direction: column;
   }
 }
 
@@ -379,10 +393,17 @@
   }
 }
 
+.page-footer__navigation-list-second-column,
 .page-footer__navigation-list,
 .page-footer__contacts-list {
   list-style: none;
-  padding-bottom: 30px;
+}
+
+.page-footer__navigation-list-second-column,
+.page-footer__contacts-list {
+  @media (max-width: $width-tablet) {
+    padding-bottom: 30px;
+  }
 }
 
 .page-footer__contacts-item a {
@@ -415,13 +436,6 @@
 }
 
 .page-footer__navigation-list {
-  display: flex;
-  flex-direction: column;
-  width: 557px;
-  justify-content: space-between;
-
-  column-count: 2;
-
   @media (max-width: 1285px) {
     width: auto;
     flex-direction: column;
@@ -438,23 +452,9 @@
 }
 
 .page-footer__navigation-list li {
-  width: calc((100% - 65px) / 2);
-
   @media (max-width: 1285px) {
     width: auto;
     margin-right: 0;
-  }
-}
-
-.page-footer__navigation-item--second-column {
-  margin-top: 64px;
-
-  @media (max-width: 1284px) {
-    margin-top: 0;
-  }
-
-  @media (max-width: $width-tablet) {
-    margin-top: 0;
   }
 }
 
@@ -466,14 +466,14 @@
   color: $color-secondary;
 }
 
-.page-footer__navigation ul,
-.page-footer__contacts ul {
+.page-footer__navigation .js-accordion,
+.page-footer__contacts .js-accordion {
   @media (max-width: $width-mobile) {
     display: none;
   }
 }
 
-.jsFooterTitleOpened + ul {
+.jsFooterTitleOpened + .js-accordion {
   @media (max-width: $width-mobile) {
     display: block;
   }
@@ -481,6 +481,10 @@
 
 .page-footer h3 {
   @media (max-width: $width-mobile) {
+    &:hover {
+      color: $color-secondary;
+    }
+
     &::before {
       content: "";
       position: absolute;
