@@ -20,8 +20,6 @@ html {
 *,
 *::before,
 *::after {
-  margin: 0;
-  padding: 0;
   box-sizing: inherit;
 }
 
@@ -45,9 +43,4 @@ img {
 
 .no-scroll {
   overflow: hidden;
-  position: fixed;
-  right: 0;
-  left: 0;
-  top: 0;
-  bottom: 0;
 }

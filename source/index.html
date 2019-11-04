@@ -42,20 +42,11 @@
 
   <header class="page-header">
     <a class="page-header__logo  logo">
-      <svg width="204" height="52">
-        <g id="icon-logo" width="52" height="52" viewBox="0 0 52 52"></g>
-        <g id="icon-Smart-Device-Logo" width="133" height="20" viewBox="0 0 133 20" ></g>
-        <g id="icon-smart-device-logo-note"></g>
-
-        <use class="icon1" xlink:href="#icon-logo" x="-74" y="1"/>
-        <use class="icon2" xlink:href="#icon-Smart-Device-Logo" width="133" height="20" x="68" y="10"/>
-        <use class="icon3" xlink:href="#icon-smart-device-logo-note" width="105" height="10" x="68" y="40"/>
-      </svg>
+      <picture>
+        <source srcset="img/logo.svg" media="(max-width: 767px)">
+        <img src="img/logo-with-text.svg" alt="Smart-Device">
+      </picture>
     </a>
-
-    <nav class="main-nav">
-      <button class="main-nav__toggle  visually-hidden" type="button">Открыть меню</button>
-    </nav>
 
     <div class="page-header__contacts">
       <a class="page-header__email" href="mailto:info@sd.ru">info@sd.ru
@@ -146,7 +137,7 @@
             <a href="#">
               <h3>Производство печатных плат</h3>
               <picture>
-                <img src="img/production@1x.jpg" srcset="img/production@2x.jpg" alt="фото товаров и услуг">
+                <img src="img/production@1x.jpg" srcset="img/production@2x.jpg 2x" alt="фото товаров и услуг">
               </picture>
             </a>
           </article>
@@ -155,7 +146,7 @@
             <a href="#">
               <h3>Монтаж печатных плат</h3>
               <picture>
-                <img src="img/montage@1x.jpg" srcset="img/montage@2x.jpg" alt="фото товаров и услуг">
+                <img src="img/montage@1x.jpg" srcset="img/montage@2x.jpg 2x" alt="фото товаров и услуг">
               </picture>
             </a>
           </article>
@@ -164,7 +155,7 @@
             <a href="#">
               <h3>Комплектующие для светотехники</h3>
               <picture>
-                <img src="img/components@1x.jpg" srcset="img/components@2x.jpg" alt="фото товаров и услуг">
+                <img src="img/components@1x.jpg" srcset="img/components@2x.jpg 2x" alt="фото товаров и услуг">
               </picture>
             </a>
           </article>
@@ -210,15 +201,9 @@
   <footer class="page-footer">
     <div class="page-footer__inner">
       <a class="page-footer__logo  logo">
-        <svg width="216" height="52">
-          <g id="icon-logo" width="52" height="52"></g>
-          <g id="icon-Service-Device-Logo" width="147" height="20" viewBox="0 0 147 20" ></g>
-          <g id="icon-smart-device-logo-note"></g>
-
-          <use xlink:href="#icon-logo" x="-83" y="0"/>
-          <use xlink:href="#icon-Service-Device-Logo" width="147" height="20" viewBox="0 0 147 20" x="68" y="10"/>
-          <use xlink:href="#icon-smart-device-logo-note" width="105" height="10" x="68" y="40"/>
-        </svg>
+        <picture>
+          <img src="img/logo-footer-with-text.svg" alt="Smart-Service">
+        </picture>
       </a>
 
       <nav class="page-footer__navigation">
@@ -325,7 +310,7 @@
     </button>
   </section>
   <div class="overlay"></div>
-  <script src="https://unpkg.com/imask"></script>
+  <script src="js/vendor.js"></script>
   <script src="js/main.js"></script>
 
 </body>

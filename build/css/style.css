@@ -347,7 +347,7 @@ body {
           flex-direction: column;
   height: 100%;
   min-width: 320px;
-  font-family: "PTMono", "Segoe UI", "Roboto", "Helvetica Neue", monospace;
+  font-family: "PTMono", monospace;
   font-size: 16px;
   font-weight: 400;
   font-style: normal;
@@ -363,8 +363,6 @@ html {
 *,
 *::before,
 *::after {
-  margin: 0;
-  padding: 0;
   -webkit-box-sizing: inherit;
           box-sizing: inherit; }
 
@@ -386,12 +384,7 @@ img {
   overflow: hidden; }
 
 .no-scroll {
-  overflow: hidden;
-  position: fixed;
-  right: 0;
-  left: 0;
-  top: 0;
-  bottom: 0; }
+  overflow: hidden; }
 
 .page-header {
   margin: 0 auto;
@@ -475,6 +468,8 @@ img {
 
 .page-header__email {
   margin-top: 16px;
+  margin-left: 70px;
+  margin-right: 16px;
   padding-left: 40px; }
   .page-header__email:hover {
     color: #00b2ff; }
@@ -493,7 +488,8 @@ img {
       margin-top: 8px; } }
 
 .page-header__phone {
-  margin-left: 81px;
+  margin-left: 70px;
+  margin-right: 16px;
   margin-top: 16px;
   padding-left: 36px; }
   .page-header__phone:hover {
@@ -527,22 +523,25 @@ img {
       left: -24px; } }
 
 .page-header .page-header__callback-button {
-  margin-top: 4px;
-  min-height: 45px;
-  padding-left: 25px;
-  padding-right: 25px;
-  width: 180px;
-  font-size: 14px;
-  letter-spacing: 0.6px;
-  border: 1px solid #ffffff;
-  padding-top: 0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 53px; }
+  margin-left: 37px;
+  margin-top: 4px;
+  padding-top: 0;
+  padding-left: 25px;
+  padding-right: 25px;
+  width: 180px;
+  min-height: 45px;
+  font-size: 14px;
+  letter-spacing: 0.6px;
+  border: 1px solid #ffffff; }
+  @media (max-width: 1043px) {
+    .page-header .page-header__callback-button {
+      margin-left: 33px; } }
   @media (max-width: 1023px) {
     .page-header .page-header__callback-button {
       display: none; } }
@@ -556,19 +555,16 @@ img {
 .logo {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  cursor: pointer; }
+  display: flex; }
   @media (max-width: 767px) {
     .logo {
       margin-right: 90px; } }
 
-.logo svg {
-  margin-right: 15px; }
-  @media (max-width: 767px) {
-    .logo svg {
-      margin-left: 2px;
-      height: 38px;
-      width: 38px; } }
+@media (max-width: 767px) {
+  .logo svg {
+    margin-left: 2px;
+    height: 38px;
+    width: 38px; } }
 
 .logo .icon1 {
   right: 1px; }
@@ -594,7 +590,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-family: "$font-logo", BlinkMacSystemFont, "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 12px;
   font-weight: 500;
   line-height: 14px;
@@ -658,8 +654,9 @@ img {
 
 .promo-content h2 {
   position: relative;
+  margin: 0;
   padding-bottom: 27px;
-  font-family: "Roboto Condensed", "Segoe UI", "Helvetica Neue", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 80px;
   font-weight: 700;
   text-transform: uppercase;
@@ -690,6 +687,7 @@ img {
   position: relative;
   padding-left: 94px;
   padding-right: 645px;
+  margin-top: 0;
   margin-bottom: 43px;
   line-height: 34.5px;
   font-size: 22px;
@@ -728,13 +726,14 @@ img {
 
 .promo-content__button {
   position: relative;
-  width: 407px;
+  width: 408px;
   height: 55px;
   padding-left: 44px;
   padding-right: 27px;
   margin-left: 95px;
   letter-spacing: 0.8px;
   z-index: 1;
+  border: 1px solid transparent;
   color: #ffffff;
   background-color: #00b2ff; }
   @media (max-width: 1023px) {
@@ -742,7 +741,7 @@ img {
       margin-left: 114px;
       padding-left: 31px;
       padding-right: 12px;
-      width: 379px; } }
+      width: 380px; } }
   @media (max-width: 767px) {
     .promo-content__button {
       -webkit-box-pack: center;
@@ -755,15 +754,8 @@ img {
       width: 100%;
       font-size: 0; } }
   .promo-content__button:hover {
-    width: 409px;
     background-color: transparent;
     border: 1px solid #ffffff; }
-    @media (max-width: 1023px) {
-      .promo-content__button:hover {
-        width: 381px; } }
-    @media (max-width: 767px) {
-      .promo-content__button:hover {
-        width: 289px; } }
   .promo-content__button:active {
     width: 409px;
     background-color: #ffffff;
@@ -780,6 +772,7 @@ img {
   font-size: 0; }
   @media (max-width: 767px) {
     .promo-content span {
+      width: 270px;
       font-size: 16px; } }
 
 .promo-content__button-scroll {
@@ -788,7 +781,7 @@ img {
   left: 215px;
   -webkit-transform: rotate(270deg);
           transform: rotate(270deg);
-  font-family: "PTMono", "Segoe UI", "Roboto", "Helvetica Neue", monospace;
+  font-family: "PTMono", monospace;
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
@@ -812,7 +805,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
   line-height: 40px;
-  font-family: "Roboto Condensed", "Segoe UI", "Helvetica Neue", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   border-radius: 5px;
@@ -997,8 +990,9 @@ img {
     left: 28px; } }
 
 .advantages__item h3 {
+  margin: 0;
   padding-bottom: 20px;
-  font-family: "Roboto Condensed", "Segoe UI", "Helvetica Neue", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 24px;
   font-weight: 400;
   color: #00b2ff; }
@@ -1012,6 +1006,7 @@ img {
       padding-bottom: 12px; } }
 
 .advantages__item p {
+  margin: 0;
   color: #666666;
   line-height: 21.5px; }
   @media (max-width: 1023px) {
@@ -1081,8 +1076,9 @@ img {
       background-image: none; } }
 
 .about-company h2 {
+  margin: 0;
   padding-bottom: 23px;
-  font-family: "Roboto Condensed", "Segoe UI", "Helvetica Neue", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 36px;
   line-height: 50.63px;
   font-weight: 400; }
@@ -1095,6 +1091,7 @@ img {
       line-height: 39.38px; } }
 
 .about-company p {
+  margin-top: 0;
   margin-bottom: 24px;
   line-height: 21.5px; }
   @media (max-width: 767px) {
@@ -1148,14 +1145,14 @@ img {
     color: #ffffff; }
 
 .catalog {
-  min-height: 937px;
+  padding-bottom: 94px;
   background-color: #1b2d37; }
   @media (max-width: 1023px) {
     .catalog {
-      min-height: 1126px; } }
+      padding-bottom: 0; } }
   @media (max-width: 767px) {
     .catalog {
-      min-height: 1101px; } }
+      padding-bottom: 2px; } }
 
 .catalog__inner {
   margin: 0 auto;
@@ -1176,7 +1173,7 @@ img {
   margin: 0 auto;
   padding-top: 89px;
   padding-bottom: 53px;
-  font-family: "Roboto Condensed", "Segoe UI", "Helvetica Neue", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 36px;
   line-height: 50.36px;
   font-weight: 400;
@@ -1210,26 +1207,31 @@ img {
   margin: 0 auto; }
   @media (max-width: 1023px) {
     .catalog__wrapper {
-      padding-bottom: 77px;
-      min-height: 937px;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column; } }
+      display: block;
+      padding-bottom: 33px;
+      min-height: 937px; } }
   @media (max-width: 767px) {
     .catalog__wrapper {
-      padding-bottom: 64px;
+      padding-bottom: 0;
       min-height: 892px; } }
 
+.catalog__wrapper article:nth-child(3n + 3) {
+  margin-right: 0; }
+
 .catalog__item {
-  width: calc((100% - 60px) / 3); }
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px; }
   @media (max-width: 1374px) {
     .catalog__item {
       margin-bottom: 30px; } }
   @media (max-width: 1023px) {
     .catalog__item {
-      margin-bottom: 0;
+      margin-bottom: 45px;
       width: 100%; } }
+  @media (max-width: 767px) {
+    .catalog__item {
+      margin-bottom: 31px; } }
 
 .product-item a {
   position: relative;
@@ -1241,10 +1243,10 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  height: 620px;
   text-decoration: none;
   background-repeat: no-repeat;
-  overflow: hidden; }
+  overflow: hidden;
+  border: 2px solid transparent; }
   @media (max-width: 1023px) {
     .product-item a {
       height: 256px;
@@ -1271,14 +1273,16 @@ img {
   color: #00b2ff; }
 
 .product-item img {
+  width: 100%;
   opacity: 0.2; }
 
 .product-item h3 {
   position: absolute;
   top: 50px;
   left: 44px;
+  margin: 0;
   width: 173px;
-  font-family: "Roboto Condensed", "Segoe UI", "Helvetica Neue", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 30px;
@@ -1341,9 +1345,11 @@ img {
       background-image: none; } }
 
 .feedback h2 {
+  margin-top: 0;
+  margin-bottom: 0;
   margin-left: 50.8%;
   padding-bottom: 11px;
-  font-family: "Roboto Condensed", "Segoe UI", "Helvetica Neue", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 36px;
   line-height: 50.63px;
   font-weight: 400;
@@ -1365,6 +1371,8 @@ img {
       line-height: 39px; } }
 
 .feedback p {
+  margin-top: 0;
+  margin-bottom: 0;
   margin-left: 50.8%;
   padding-left: 4px;
   padding-bottom: 53px;
@@ -1430,7 +1438,7 @@ img {
   padding-left: 17px;
   margin-left: 4px;
   width: 100%;
-  font-family: "PTMono", "Segoe UI", "Roboto", "Helvetica Neue", monospace;
+  font-family: "PTMono", monospace;
   font-size: 16px;
   line-height: 22px;
   color: #ffffff;
@@ -1464,31 +1472,31 @@ img {
           justify-content: space-between; }
 
 ::-webkit-input-placeholder {
-  font-family: "PTMono", "Segoe UI", "Roboto", "Helvetica Neue", monospace;
+  font-family: "PTMono", monospace;
   font-size: 16px;
   line-height: 21.5px;
   color: #ffffff; }
 
 ::-moz-placeholder {
-  font-family: "PTMono", "Segoe UI", "Roboto", "Helvetica Neue", monospace;
+  font-family: "PTMono", monospace;
   font-size: 16px;
   line-height: 21.5px;
   color: #ffffff; }
 
 :-ms-input-placeholder {
-  font-family: "PTMono", "Segoe UI", "Roboto", "Helvetica Neue", monospace;
+  font-family: "PTMono", monospace;
   font-size: 16px;
   line-height: 21.5px;
   color: #ffffff; }
 
 ::-ms-input-placeholder {
-  font-family: "PTMono", "Segoe UI", "Roboto", "Helvetica Neue", monospace;
+  font-family: "PTMono", monospace;
   font-size: 16px;
   line-height: 21.5px;
   color: #ffffff; }
 
 ::placeholder {
-  font-family: "PTMono", "Segoe UI", "Roboto", "Helvetica Neue", monospace;
+  font-family: "PTMono", monospace;
   font-size: 16px;
   line-height: 21.5px;
   color: #ffffff; }
@@ -1636,6 +1644,14 @@ img {
 .feedback input[type="checkbox"]:focus + span {
   outline: 1px solid #ffffff; }
 
+.feedback input:hover,
+.feedback textarea:hover {
+  outline: 1px solid #ffffff; }
+
+.feedback input:active,
+.feedback textarea:active {
+  outline: 1px solid #c4c4c4; }
+
 .page-footer {
   margin-top: -135px;
   position: relative;
@@ -1723,7 +1739,7 @@ img {
 
 .page-footer__logo {
   padding-top: 20px;
-  margin-right: 8%;
+  margin-right: 9%;
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1; }
@@ -1744,7 +1760,8 @@ img {
   @media (max-width: 767px) {
     .page-footer__logo {
       padding-right: 0;
-      margin-top: auto;
+      margin-top: 25px;
+      margin-bottom: 20px;
       margin-left: auto;
       margin-right: auto; } }
 
@@ -1762,7 +1779,7 @@ img {
       margin-bottom: 60px; } }
   @media (max-width: 1023px) {
     .page-footer__navigation {
-      padding-top: 20px;
+      padding-top: 15px;
       width: 356px;
       -webkit-box-ordinal-group: 5;
           -ms-flex-order: 4;
@@ -1813,12 +1830,6 @@ img {
           -ms-flex-direction: column;
               flex-direction: column; } }
 
-@media (max-width: 767px) {
-  .page-footer__logo svg {
-    width: 52px;
-    height: 52px;
-    margin-top: 26px; } }
-
 .page-footer__contacts {
   position: relative;
   display: -webkit-box;
@@ -1828,6 +1839,7 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-bottom: 30px;
   width: 333px;
   -webkit-box-ordinal-group: 4;
       -ms-flex-order: 3;
@@ -1840,7 +1852,7 @@ img {
           -ms-flex-positive: 0;
               flex-grow: 0;
       padding-left: 15px;
-      padding-top: 20px;
+      padding-top: 15px;
       width: 360px;
       -webkit-box-ordinal-group: 6;
           -ms-flex-order: 5;
@@ -1886,7 +1898,7 @@ img {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
-      margin-left: 9%;
+      margin-left: 7%;
       margin-top: 0;
       -webkit-box-ordinal-group: 4;
           -ms-flex-order: 3;
@@ -2000,10 +2012,11 @@ img {
 
 .page-footer__navigation h3,
 .page-footer__contacts h3 {
+  margin: 0;
   padding-top: 20px;
   padding-bottom: 24px;
   padding-left: 2px;
-  font-family: "Roboto Condensed", "Segoe UI", "Helvetica Neue", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 15px;
   line-height: 16px;
   letter-spacing: 0.05em;
@@ -2029,6 +2042,9 @@ img {
 .page-footer__navigation-list-second-column,
 .page-footer__navigation-list,
 .page-footer__contacts-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
   list-style: none; }
 
 @media (max-width: 1023px) {
@@ -2121,6 +2137,8 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 0;
+  padding: 0;
   width: 112px;
   list-style: none; }
 
@@ -2160,21 +2178,10 @@ img {
 .pop-up__form {
   padding-top: 29px;
   background-color: #00b2ff; }
-  @media (max-width: 1300px) {
-    .pop-up__form {
-      padding-left: 46.8%; } }
-  @media (max-width: 1023px) {
-    .pop-up__form {
-      padding-left: 63px;
-      padding-right: 62px; } }
-  @media (max-width: 767px) {
-    .pop-up__form {
-      padding-left: 0;
-      padding-right: 0; } }
 
 .pop-up h2 {
   margin-bottom: 13px;
-  font-family: "Roboto Condensed", "Segoe UI", "Helvetica Neue", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 28px;
   line-height: 39px;
   font-weight: 400;
@@ -2183,7 +2190,7 @@ img {
 .pop-up p {
   padding-left: 0;
   padding-right: 9px;
-  font-family: "PTMono", "Segoe UI", "Roboto", "Helvetica Neue", monospace;
+  font-family: "PTMono", monospace;
   font-size: 16px;
   line-height: 22px;
   color: #ffffff;
@@ -2212,7 +2219,7 @@ img {
   padding-left: 24px;
   padding-right: 24px;
   width: 411px;
-  font-family: "PTMono", "Segoe UI", "Roboto", "Helvetica Neue", monospace;
+  font-family: "PTMono", monospace;
   font-size: 16px;
   line-height: 21.5px;
   color: #ffffff; }
@@ -2246,6 +2253,14 @@ img {
 
 .pop-up input[type="checkbox"]:focus + span {
   outline: 1px solid #ffffff; }
+
+.pop-up input:hover,
+.pop-up textarea:hover {
+  outline: 1px solid #ffffff; }
+
+.pop-up input:active,
+.pop-up textarea:active {
+  outline: 1px solid #c4c4c4; }
 
 .overlay {
   display: none;

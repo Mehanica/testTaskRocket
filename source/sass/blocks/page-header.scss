@@ -81,6 +81,8 @@
 
 .page-header__email {
   margin-top: 16px;
+  margin-left: 70px;
+  margin-right: 16px;
   padding-left: 40px;
 
   &:hover {
@@ -110,7 +112,8 @@
 }
 
 .page-header__phone {
-  margin-left: 81px;
+  margin-left: 70px;
+  margin-right: 16px;
   margin-top: 16px;
   padding-left: 36px;
 
@@ -159,18 +162,22 @@
 }
 
 .page-header .page-header__callback-button {
+  justify-content: center;
+  align-items: center;
+  margin-left: 37px;
   margin-top: 4px;
-  min-height: 45px;
+  padding-top: 0;
   padding-left: 25px;
   padding-right: 25px;
   width: 180px;
+  min-height: 45px;
   font-size: 14px;
   letter-spacing: 0.6px;
   border: 1px solid $color-main;
-  padding-top: 0;
-  justify-content: center;
-  align-items: center;
-  margin-left: 53px;
+
+  @media (max-width: 1043px) {
+    margin-left: 33px;
+  }
 
   @media (max-width: $width-tablet) {
     display: none;
