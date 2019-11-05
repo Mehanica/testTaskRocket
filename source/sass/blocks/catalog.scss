@@ -46,7 +46,7 @@
 
 .catalog__wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
   max-width: 1170px;
   margin: 0 auto;
@@ -54,12 +54,10 @@
   @media (max-width: $width-tablet) {
     display: block;
     padding-bottom: 33px;
-    min-height: 937px;
   }
 
   @media (max-width: $width-mobile) {
-    padding-bottom: 0;
-    min-height: 892px;
+    padding-bottom: 30px;
   }
 }
 

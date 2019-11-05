@@ -26,16 +26,12 @@
 
 .page-header__contacts {
   display: flex;
+  justify-content: flex-end;
   flex-wrap: wrap;
-  // align-items: flex-start;
 
   @media (max-width: $width-tablet) {
     // display: block;
     font-size: 0;
-  }
-
-  @media (max-width: $width-mobile) {
-    // width: 90px;
   }
 }
 

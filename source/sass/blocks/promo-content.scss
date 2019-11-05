@@ -154,18 +154,9 @@
   }
 
   &:active {
-    width: 409px;
     background-color: $color-main;
     color: $color-secondary;
     border: 1px solid $color-secondary;
-
-    @media (max-width: $width-tablet) {
-      width: 381px;
-    }
-
-    @media (max-width: $width-mobile) {
-      width: 289px;
-    }
   }
 }
 
