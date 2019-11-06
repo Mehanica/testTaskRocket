@@ -281,14 +281,18 @@ input::placeholder {
       left: 1px;
     }
   }
+
+  &:hover::before {
+    border-color: $color-background-light;
+  }
+
+  &:hover span {
+    color: $color-background-light;
+  }
 }
 
 .feedback__caption {
   cursor: pointer;
-
-  &:hover {
-    color: $color-background-light;
-  }
 }
 
 .feedback__button-and-checkbox-wrapper input:checked + .feedback__caption::before,

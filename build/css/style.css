@@ -744,6 +744,8 @@ input[type="submit"],
   position: relative;
   width: 408px;
   min-height: 55px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   padding-left: 44px;
   padding-right: 27px;
   margin-left: 95px;
@@ -763,6 +765,8 @@ input[type="submit"],
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
+      padding-top: 9px;
+      padding-bottom: 9px;
       padding-right: 31px;
       padding-left: 10px;
       margin-left: 0;
@@ -1033,11 +1037,6 @@ input[type="submit"],
     -webkit-transform: translateY(6px);
             transform: translateY(6px); } }
 
-@media (max-width: 767px) {
-  .advantages__item--detective p {
-    -webkit-transform: translateY(-20px);
-            transform: translateY(-20px); } }
-
 @media (max-width: 1023px) {
   .advantages__item--tag p {
     -webkit-transform: translateY(-2px);
@@ -1106,12 +1105,11 @@ input[type="submit"],
 
 .about-company p {
   margin-top: 0;
-  margin-bottom: 24px;
-  line-height: 21.5px; }
+  margin-bottom: 19px;
+  line-height: 22px; }
   @media (max-width: 767px) {
     .about-company p {
-      margin-bottom: 35px;
-      line-height: 22.3px; } }
+      margin-bottom: 35px; } }
 
 @media (max-width: 1023px) {
   .about-company__note-hidden {
@@ -1625,11 +1623,13 @@ input::placeholder {
     @media (max-width: 767px) {
       .feedback__button-and-checkbox-wrapper label::before {
         left: 1px; } }
+  .feedback__button-and-checkbox-wrapper label:hover::before {
+    border-color: #e5e5e5; }
+  .feedback__button-and-checkbox-wrapper label:hover span {
+    color: #e5e5e5; }
 
 .feedback__caption {
   cursor: pointer; }
-  .feedback__caption:hover {
-    color: #e5e5e5; }
 
 .feedback__button-and-checkbox-wrapper input:checked + .feedback__caption::before,
 .feedback__button-and-checkbox-wrapper input:checked + .feedback__caption::after {
@@ -2089,6 +2089,8 @@ input::placeholder {
 
 .page-footer__contacts-item a {
   cursor: pointer; }
+  .page-footer__contacts-item a:hover {
+    color: #000000; }
 
 .page-footer__bottom-link,
 .page-footer__navigation-item a,
@@ -2251,7 +2253,8 @@ input::placeholder {
 
 .pop-up__form-field-contacts input {
   margin-bottom: 29px;
-  padding-bottom: 4px;
+  padding-top: 14px;
+  padding-bottom: 14px;
   min-height: 52px; }
 
 .pop-up__form-field-request textarea {

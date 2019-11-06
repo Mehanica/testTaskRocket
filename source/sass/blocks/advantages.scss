@@ -236,10 +236,6 @@
   @media (max-width: $width-tablet) {
     transform: translateY(6px);
   }
-
-  @media (max-width: $width-mobile) {
-    transform: translateY(-20px);
-  }
 }
 
 .advantages__item--tag p {

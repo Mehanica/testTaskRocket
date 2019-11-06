@@ -404,6 +404,10 @@
 
 .page-footer__contacts-item a {
   cursor: pointer;
+
+  &:hover {
+    color: $color-dark;
+  }
 }
 
 .page-footer__bottom-link,

@@ -112,11 +112,14 @@ if (feedbackScrollLink) {
 }
 
 [].forEach.call(phoneFields, function (element) {
-  element.addEventListener('invalid', function () {
-    element.setCustomValidity('Введите данные формата: +7 (ХХХ) ХХХ-ХХ-ХХ');
-  });
-  element.addEventListener('valid', function () {
-    element.setCustomValidity('');
+
+  element.addEventListener('change', function () {
+    if (element.validity.patternMismatch) {
+      element.setCustomValidity('Введите данные формата: +7 (ХХХ) ХХХ-ХХ-ХХ');
+    } else {
+      console.log('hi');
+      element.setCustomValidity('');
+    }
   });
 });
 

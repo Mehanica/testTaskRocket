@@ -125,6 +125,8 @@
   position: relative;
   width: 408px;
   min-height: 55px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   padding-left: 44px;
   padding-right: 27px;
   margin-left: 95px;
@@ -143,6 +145,8 @@
 
   @media (max-width: $width-mobile) {
     justify-content: center;
+    padding-top: 9px;
+    padding-bottom: 9px;
     padding-right: 31px;
     padding-left: 10px;
     margin-left: 0;

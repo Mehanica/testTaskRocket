@@ -53,12 +53,11 @@
 
 .about-company p {
   margin-top: 0;
-  margin-bottom: 24px;
-  line-height: 21.5px;
+  margin-bottom: 19px;
+  line-height: 22px;
 
   @media (max-width: $width-mobile) {
     margin-bottom: 35px;
-    line-height: 22.3px;
   }
 }
 
