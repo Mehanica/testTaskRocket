@@ -1495,30 +1495,14 @@ input[type="submit"],
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
-::-webkit-input-placeholder {
-  font-family: "PTMono", "Courier New", monospace;
-  font-size: 16px;
-  line-height: 21.5px;
-  color: #ffffff; }
-
+:-moz-placeholder,
 ::-moz-placeholder {
   font-family: "PTMono", "Courier New", monospace;
   font-size: 16px;
   line-height: 21.5px;
   color: #ffffff; }
 
-:-ms-input-placeholder {
-  font-family: "PTMono", "Courier New", monospace;
-  font-size: 16px;
-  line-height: 21.5px;
-  color: #ffffff; }
-
-::-ms-input-placeholder {
-  font-family: "PTMono", "Courier New", monospace;
-  font-size: 16px;
-  line-height: 21.5px;
-  color: #ffffff; }
-
+:-moz-placeholder,
 ::placeholder {
   font-family: "PTMono", "Courier New", monospace;
   font-size: 16px;
