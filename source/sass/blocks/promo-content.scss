@@ -1,7 +1,7 @@
 .promo-content {
   position: relative;
   min-height: 878px;
-  background-image: url("../../img/computer-boards-desktop@1x.png"), url("../../img/triangles-white@1x.png"), url("../../img/promo-background@1x.png");
+  background-image: url("../img/computer-boards-desktop@1x.png"), url("../img/triangles-white@1x.png"), url("../img/promo-background@1x.png");
   background-size: 705px 515px, 1920px 881px, cover;
   background-position: right 177px top 258px, right top, center;
   background-repeat: no-repeat;
@@ -10,7 +10,7 @@
   padding-top: 317px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../../img/computer-boards-desktop@2x.png"), url("../../img/triangles-white@2x.png"), url("../../img/promo-background@2x.png");
+    background-image: url("../img/computer-boards-desktop@2x.png"), url("../img/triangles-white@2x.png"), url("../img/promo-background@2x.png");
   }
 
   @media (max-width: $width-tablet) {

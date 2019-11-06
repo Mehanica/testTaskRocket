@@ -6,13 +6,13 @@
   min-height: 418px;
   padding-bottom: 23px;
 
-  background-image: url("../../img/number@1x.png");
+  background-image: url("../img/number@1x.png");
   background-repeat: no-repeat;
   background-size: 220px 317px;
   background-position: left 101px top 4px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../../img/number@2x.png");
+    background-image: url("../img/number@2x.png");
   }
 
   @media (max-width: $width-tablet) {

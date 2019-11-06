@@ -1,13 +1,13 @@
 .advantages {
   margin-top: 112px;
-  background-image: url("../../img/polygon1.svg"), url("../../img/polygon2.svg"), url("../../img/polygon3.svg"), url("../../img/polygon4.svg");
+  background-image: url("../img/polygon1.svg"), url("../img/polygon2.svg"), url("../img/polygon3.svg"), url("../img/polygon4.svg");
   background-position: top -67px left 202px, bottom -56px left, 558px 35px, top 284px right 28px;
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
 
   @media (max-width: $width-tablet) {
     margin-bottom: 17px;
     margin-top: 54px;
-    background-image: url("../../img/polygon3.svg");
+    background-image: url("../img/polygon3.svg");
     background-position: top 36px right -312px;
   }
 

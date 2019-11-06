@@ -628,7 +628,7 @@ input[type="submit"],
 .promo-content {
   position: relative;
   min-height: 878px;
-  background-image: url("../../img/computer-boards-desktop@1x.png"), url("../../img/triangles-white@1x.png"), url("../../img/promo-background@1x.png");
+  background-image: url("../img/computer-boards-desktop@1x.png"), url("../img/triangles-white@1x.png"), url("../img/promo-background@1x.png");
   background-size: 705px 515px, 1920px 881px, cover;
   background-position: right 177px top 258px, right top, center;
   background-repeat: no-repeat;
@@ -637,7 +637,7 @@ input[type="submit"],
   padding-top: 317px; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .promo-content {
-      background-image: url("../../img/computer-boards-desktop@2x.png"), url("../../img/triangles-white@2x.png"), url("../../img/promo-background@2x.png"); } }
+      background-image: url("../img/computer-boards-desktop@2x.png"), url("../img/triangles-white@2x.png"), url("../img/promo-background@2x.png"); } }
   @media (max-width: 1023px) {
     .promo-content {
       background-size: 465px 340px, 1514px 749px, cover;
@@ -828,14 +828,14 @@ input[type="submit"],
 
 .advantages {
   margin-top: 112px;
-  background-image: url("../../img/polygon1.svg"), url("../../img/polygon2.svg"), url("../../img/polygon3.svg"), url("../../img/polygon4.svg");
+  background-image: url("../img/polygon1.svg"), url("../img/polygon2.svg"), url("../img/polygon3.svg"), url("../img/polygon4.svg");
   background-position: top -67px left 202px, bottom -56px left, 558px 35px, top 284px right 28px;
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat; }
   @media (max-width: 1023px) {
     .advantages {
       margin-bottom: 17px;
       margin-top: 54px;
-      background-image: url("../../img/polygon3.svg");
+      background-image: url("../img/polygon3.svg");
       background-position: top 36px right -312px; } }
   @media (max-width: 767px) {
     .advantages {
@@ -1066,13 +1066,13 @@ input[type="submit"],
   padding-right: 134px;
   min-height: 418px;
   padding-bottom: 23px;
-  background-image: url("../../img/number@1x.png");
+  background-image: url("../img/number@1x.png");
   background-repeat: no-repeat;
   background-size: 220px 317px;
   background-position: left 101px top 4px; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .about-company {
-      background-image: url("../../img/number@2x.png"); } }
+      background-image: url("../img/number@2x.png"); } }
   @media (max-width: 1023px) {
     .about-company {
       margin-top: 22px;
@@ -1273,7 +1273,7 @@ input[type="submit"],
     width: 63px;
     height: 63px;
     background-color: #00b2ff;
-    background-image: url("../../img/arrow.svg");
+    background-image: url("../img/arrow.svg");
     background-position: center left 31px;
     background-repeat: no-repeat;
     z-index: 1; }
@@ -1322,7 +1322,7 @@ input[type="submit"],
   padding-top: 92px;
   min-height: 670px;
   background-color: #00b2ff;
-  background-image: url("../../img/triangles-white.svg"), url("../../img/blue-polygon1.svg"), url("../../img/blue-polygon2.svg");
+  background-image: url("../img/triangles-white.svg"), url("../img/blue-polygon1.svg"), url("../img/blue-polygon2.svg");
   background-repeat: no-repeat;
   background-position: right calc(50% + 855px) top -178px, right calc(50% - 789px) bottom -22px, right calc(50% - 814px) top 42px; }
   @media (max-width: 1023px) {
@@ -1351,7 +1351,7 @@ input[type="submit"],
           align-items: flex-end;
   padding-right: 137px;
   position: relative;
-  background-image: url("../../img/paper-airplane@1x.png");
+  background-image: url("../img/paper-airplane@1x.png");
   background-size: 511px 288px, 1920px 881px;
   background-position: left 107px top 69px;
   background-repeat: no-repeat;
@@ -1366,7 +1366,7 @@ input[type="submit"],
       padding-right: 15px; } }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .feedback__inner {
-      background-image: url("../../img/paper-airplane@2x.png"); } }
+      background-image: url("../img/paper-airplane@2x.png"); } }
   @media (max-width: 1023px) {
     .feedback__inner {
       width: 594px;
