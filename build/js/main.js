@@ -114,7 +114,6 @@ if (feedbackScrollLink) {
 [].forEach.call(phoneFields, function (element) {
   element.addEventListener('invalid', function () {
     element.setCustomValidity('Введите данные формата: +7 (ХХХ) ХХХ-ХХ-ХХ');
-    console.log(element.value);
   });
   element.addEventListener('valid', function () {
     element.setCustomValidity('');
