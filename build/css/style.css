@@ -1476,7 +1476,9 @@ input[type="submit"],
       margin-left: 0; } }
 
 .feedback__field-contacts input {
-  min-height: 50px; }
+  padding-top: 14px;
+  padding-bottom: 14px;
+  vertical-align: middle; }
   @media (max-width: 767px) {
     .feedback__field-contacts input {
       margin-bottom: 32px;
@@ -1495,15 +1497,31 @@ input[type="submit"],
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
-:-moz-placeholder,
-::-moz-placeholder {
+input::-webkit-input-placeholder {
   font-family: "PTMono", "Courier New", monospace;
   font-size: 16px;
   line-height: 21.5px;
   color: #ffffff; }
 
-:-moz-placeholder,
-::placeholder {
+input::-moz-placeholder {
+  font-family: "PTMono", "Courier New", monospace;
+  font-size: 16px;
+  line-height: 21.5px;
+  color: #ffffff; }
+
+input:-ms-input-placeholder {
+  font-family: "PTMono", "Courier New", monospace;
+  font-size: 16px;
+  line-height: 21.5px;
+  color: #ffffff; }
+
+input::-ms-input-placeholder {
+  font-family: "PTMono", "Courier New", monospace;
+  font-size: 16px;
+  line-height: 21.5px;
+  color: #ffffff; }
+
+input::placeholder {
   font-family: "PTMono", "Courier New", monospace;
   font-size: 16px;
   line-height: 21.5px;
