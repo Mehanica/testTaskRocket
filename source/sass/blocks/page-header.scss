@@ -30,7 +30,6 @@
   flex-wrap: wrap;
 
   @media (max-width: $width-tablet) {
-    // display: block;
     font-size: 0;
   }
 }
@@ -41,11 +40,7 @@
   color: $color-main;
 
   @media (max-width: $width-tablet) {
-    // display: inline;
-    // align-items: center;
-    // padding-left: 0;
     padding: 0;
-    // margin-right: 0;
   }
 }
 
@@ -168,6 +163,7 @@
   width: 180px;
   min-height: 45px;
   font-size: 14px;
+  line-height: 16px;
   letter-spacing: 0.6px;
   border: 1px solid $color-main;
 

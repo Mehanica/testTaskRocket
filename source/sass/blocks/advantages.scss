@@ -5,14 +5,14 @@
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
 
   @media (max-width: $width-tablet) {
-    margin-bottom: 20px;
+    margin-bottom: 17px;
     margin-top: 54px;
     background-image: url("../../img/polygon3.svg");
     background-position: top 36px right -312px;
   }
 
   @media (max-width: $width-mobile) {
-    margin-bottom: 44px;
+    margin-bottom: 41px;
     margin-top: 37px;
     background-position: top 615px right -432px;
   }
@@ -42,7 +42,7 @@
   display: block;
   width: 570px;
   min-height: 299px;
-  padding-top: 96px;
+  padding-top: 93px;
   padding-bottom: 40px;
   padding-left: 42px;
   padding-right: 39px;
@@ -86,7 +86,7 @@
   @media (max-width: $width-tablet) {
     width: 100%;
     min-height: auto;
-    padding-top: 68px;
+    padding-top: 63px;
     padding-left: 23px;
     padding-right: 21px;
     padding-bottom: 22px;
@@ -118,7 +118,7 @@
   }
 
   @media (max-width: $width-mobile) {
-    padding-bottom: 26px;
+    padding-bottom: 25px;
   }
 }
 
@@ -131,7 +131,7 @@
 
 .advantages__item--detective a {
   @media (max-width: $width-tablet) {
-    padding-top: 65px;
+    padding-top: 59px;
     padding-bottom: 59px;
   }
 
@@ -200,9 +200,10 @@
 
 .advantages__item h3 {
   margin: 0;
-  padding-bottom: 20px;
+  padding-bottom: 18px;
   font-family: $font-secondary;
   font-size: 24px;
+  line-height: 34px;
   font-weight: 400;
   color: $color-secondary;
 
@@ -212,7 +213,7 @@
 
   @media (max-width: $width-mobile) {
     font-size: 20px;
-    line-height: 28.18px;
+    line-height: 28px;
     padding-bottom: 12px;
   }
 }

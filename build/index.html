@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/style.min.css">
 
   <!-- Pixel Glass -->
-  <!-- <style>
+  <style>
       HTML {
         background-repeat: no-repeat;
         background-position:  50% 0;
@@ -31,7 +31,7 @@
       }
     </style>
     <link href="pixel-glass/styles.css" rel="stylesheet">
-    <script src="pixel-glass/script.js"></script> -->
+    <script src="pixel-glass/script.js"></script>
     <!-- // Pixel Glass -->
 
 </head>
@@ -90,6 +90,7 @@
   </div>
 
   <header class="page-header">
+    <h1 class="visually-hidden">Интернет магазин "Smart-Device" - умные технологии</h1>
     <a class="page-header__logo  logo">
       <picture>
         <source srcset="img/logo.svg" media="(max-width: 767px)">
@@ -119,12 +120,12 @@
       <div class="promo-content__inner">
         <h2>Печатные <br>платы</h2>
         <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
-        <a class="promo-content__button  button" href="#">Получить бесплатную консультацию<span>бесплатная консультация</span></a>
-        <button class="promo-content__button-scroll">Скролл вниз</button>
+        <a class="promo-content__button  button" href="feedback">Получить бесплатную консультацию<span>бесплатная консультация</span></a>
+        <a class="promo-content__button-scroll" href="#advantages">Скролл вниз</a>
       </div>
     </section>
 
-    <section class="advantages">
+    <section class="advantages" id="advantages">
       <div class="advantages__inner">
         <h2 class="visually-hidden">Наши преимущества</h2>
         <ul class="advantages__list">
@@ -212,7 +213,7 @@
       </div>
     </section>
 
-    <section class="feedback">
+    <section class="feedback" id="feedback">
       <div class="feedback__inner">
         <h2>Остались вопросы? Задайте их нам!</h2>
         <p>Мы проконсультируем Вас бесплатно</p>
@@ -319,7 +320,7 @@
 
       <a class="page-footer__bottom-link  page-footer__bottom-link--confidentiality" href="#">Условия конфиденциальности</a>
 
-      <span class="page-footer__bottom-note-link    page-footer__bottom-note--developed">Developed by <a class="page-footer__bottom-link" href="#">wow studio</a></span>
+      <a class="page-footer__bottom-link  page-footer__bottom-link--developed" href="#">Developed by wow studio</a>
     </div>
   </footer>
 
@@ -327,27 +328,27 @@
     <h2>Закажите звонок</h2>
     <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
     <form class="pop-up__form" action="https://echo.htmlacademy.ru">
-      <div class="pop-up__form-field-contacts  feedback__field-contacts">
+      <div class="pop-up__form-field-contacts">
         <label class="visually-hidden" for="name">Имя</label>
         <input type="text" name="name" placeholder="Имя" id="name" autofocus="" required="">
       </div>
 
-      <div class="pop-up__form-field-contacts  feedback__field-contacts">
+      <div class="pop-up__form-field-contacts">
         <label class="visually-hidden" for="tel">Телефон</label>
         <input type="tel" name="tel" id="tel" placeholder="Телефон" pattern="[\+]\d{9}" required="">
       </div>
 
-      <div class="pop-up__form-field-request  feedback__field-request">
+      <div class="pop-up__form-field-request">
         <label class="visually-hidden">Ваш вопрос</label>
         <textarea name="request" placeholder="Ваш вопрос" required=""></textarea>
       </div>
 
-      <div class="pop-up__form-button-and-checkbox-wrapper  feedback__button-and-checkbox-wrapper">
-        <button class="pop-up__form-button  feedback__button  button" type="submit">Отправить</button>
+      <div class="pop-up__form-button-and-checkbox-wrapper">
+        <button class="pop-up__form-button  button" type="submit">Отправить</button>
 
         <label>
           <input class="visually-hidden" type="checkbox" name="user-agreement" checked="" required="">
-          <span class="feedback__caption">Я согласен на обработку  персональных данных</span>
+          <span class="pop-up__caption">Я согласен на обработку  персональных данных</span>
         </label>
       </div>
     </form>

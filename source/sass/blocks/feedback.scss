@@ -12,7 +12,7 @@
   }
 
   @media (max-width: $width-mobile) {
-    padding-top: 29px;
+    padding-top: 31px;
     min-height: 639px;
   }
 }
@@ -20,6 +20,10 @@
 .feedback__inner {
   @include centering;
 
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 137px;
   position: relative;
   background-image: url("../../img/paper-airplane@1x.png");
   background-size: 511px 288px, 1920px 881px;
@@ -32,35 +36,42 @@
   }
 
   @media (max-width: $width-tablet) {
+    width: 594px;
+    margin: 0 auto;
+    padding-right: 0;
+    padding-left: 0;
     background-image: none;
+  }
+
+  @media (max-width: $width-mobile) {
+    align-items: flex-start;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
   }
 }
 
 .feedback h2 {
   margin-top: 0;
   margin-bottom: 0;
-  margin-left: 50.8%;
+  margin-right: 26px;
   padding-bottom: 11px;
   font-family: $font-secondary;
   font-size: 36px;
-  line-height: 50.63px;
+  line-height: 51px;
   font-weight: 400;
   color: $color-main;
 
-  @media (max-width: 1300px) {
-    margin-left: 46.8%;
-  }
-
   @media (max-width: $width-tablet) {
     padding-bottom: 18px;
-    margin-left: 63px;
+    margin-right: 110px;
     font-size: 32px;
     line-height: 45px;
   }
 
   @media (max-width: $width-mobile) {
-    padding-bottom: 16px;
-    margin-left: 0;
+    padding-bottom: 14px;
+    margin-right: 15px;
     font-size: 28px;
     line-height: 39px;
   }
@@ -69,44 +80,29 @@
 .feedback p {
   margin-top: 0;
   margin-bottom: 0;
-  margin-left: 50.8%;
+  margin-right: 247px;
   padding-left: 4px;
   padding-bottom: 53px;
   color: $color-main;
 
-  @media (max-width: 1300px) {
-    margin-left: 46.8%;
-  }
-
   @media (max-width: $width-tablet) {
     padding-bottom: 56px;
-    margin-left: 63px;
+    margin-right: 273px;
   }
 
   @media (max-width: $width-mobile) {
     padding-bottom: 26px;
-    margin-left: 0;
+    margin-right: 15px;
     padding-left: 0;
     line-height: 22px;
   }
 }
 
 .feedback form {
-  padding-left: 50.8%;
-  padding-right: 122px;
-
-  @media (max-width: 1300px) {
-    padding-left: 46.8%;
-  }
+  width: 570px;
 
   @media (max-width: $width-tablet) {
-    padding-left: 63px;
-    padding-right: 62px;
-  }
-
-  @media (max-width: $width-mobile) {
-    padding-left: 0;
-    padding-right: 0;
+    width: 100%;
   }
 }
 
@@ -206,7 +202,7 @@
   @media (max-width: $width-mobile) {
     flex-direction: column;
     width: auto;
-    margin-top: 24px;
+    margin-top: 26px;
     margin-left: 0;
   }
 }
@@ -216,6 +212,7 @@
   width: 270px;
   min-height: 45px;
   font-size: 14px;
+  line-height: 16px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   border: 1px solid $color-main;
@@ -227,7 +224,7 @@
   }
 
   @media (max-width: $width-mobile) {
-    width: 290px;
+    width: auto;
     min-height: 46.65px;
   }
 
@@ -244,8 +241,8 @@
 .feedback__button-and-checkbox-wrapper label {
   position: relative;
   width: 262px;
-  padding-left: 32px;
-  margin-top: 5px;
+  padding-left: 36px;
+  margin-top: 7px;
   cursor: pointer;
 
   @media (max-width: 1375px) {
@@ -268,8 +265,8 @@
   &::before {
     content: "";
     position: absolute;
-    top: 3px;
-    left: 0;
+    top: 4px;
+    left: 6px;
     width: 16px;
     height: 16px;
     border: 1px solid $color-main;
@@ -281,6 +278,14 @@
     @media (max-width: $width-mobile) {
       left: 1px;
     }
+  }
+}
+
+.feedback__caption {
+  cursor: pointer;
+
+  &:hover {
+    color: $color-background-light;
   }
 }
 
@@ -298,8 +303,8 @@
 }
 
 .feedback__button-and-checkbox-wrapper input:checked + .feedback__caption::before {
-  left: 3px;
-  width: 5px;
+  left: 8px;
+  width: 6px;
   transform: rotate(45deg);
 
   @media (max-width: $width-tablet) {
@@ -312,7 +317,7 @@
 }
 
 .feedback__button-and-checkbox-wrapper input:checked + .feedback__caption::after {
-  left: 6px;
+  left: 12px;
   width: 7px;
   transform: rotate(-45deg);
 
@@ -326,10 +331,10 @@
 }
 
 .feedback__button-and-checkbox-wrapper span {
+  display: flex;
   font-size: 14px;
   line-height: 16px;
   color: $color-main;
-  opacity: 0.8;
 }
 
 .feedback input[type="checkbox"]:focus + span {

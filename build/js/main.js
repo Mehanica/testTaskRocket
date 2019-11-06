@@ -7,6 +7,8 @@ var overlay = document.querySelector('.overlay');
 var form = popup.querySelector('.pop-up__form');
 var footerTitles = document.querySelectorAll('.page-footer h3');
 var phoneFields = document.getElementsByName('tel');
+var advantagesScrollLink = document.querySelector('.promo-content__button-scroll');
+var feedbackScrollLink = document.querySelector('.promo-content__button');
 
 var feedBackButtonClickHandler = function (evt) {
   evt.preventDefault();
@@ -77,10 +79,40 @@ if (form) {
   });
 }
 
-footerTitles.forEach(function (title) {
-  title.addEventListener('click', function () {
-    title.classList.toggle('jsFooterTitleOpened');
+if (footerTitles[0] && footerTitles[1]) {
+  footerTitles[0].addEventListener('click', function () {
+    footerTitles[1].classList.remove('jsFooterTitleOpened');
+    footerTitles[0].classList.toggle('jsFooterTitleOpened');
   });
+
+  footerTitles[1].addEventListener('click', function () {
+    footerTitles[0].classList.remove('jsFooterTitleOpened');
+    footerTitles[1].classList.toggle('jsFooterTitleOpened');
+  });
+}
+
+if (advantagesScrollLink) {
+  advantagesScrollLink.addEventListener('click', function (e) {
+    e.preventDefault();
+    document.getElementById('advantages').scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    });
+  });
+}
+
+if (feedbackScrollLink) {
+  feedbackScrollLink.addEventListener('click', function (e) {
+    e.preventDefault();
+    document.getElementById('feedback').scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    });
+  });
+}
+
+[].forEach.call(phoneFields, function (element) {
+  element.setCustomValidity('Введите данные формата: +7 (ХХХ) ХХХ-ХХ-ХХ');
 });
 
 /* eslint-disable */

@@ -36,16 +36,18 @@
   padding-bottom: 23px;
   font-family: $font-secondary;
   font-size: 36px;
-  line-height: 50.63px;
+  line-height: 51px;
   font-weight: 400;
 
   @media (max-width: $width-tablet) {
+    padding-bottom: 27px;
     font-size: 32px;
+    line-height: 45px;
   }
 
   @media (max-width: $width-mobile) {
     font-size: 28px;
-    line-height: 39.38px;
+    line-height: 39px;
   }
 }
 
@@ -81,6 +83,7 @@
   width: 180px;
   min-height: 45px;
   font-size: 14px;
+  line-height: 16px;
   color: $color-secondary;
   letter-spacing: 0.6px;
   border: 1px solid $color-secondary;

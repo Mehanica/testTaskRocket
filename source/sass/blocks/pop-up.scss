@@ -19,11 +19,12 @@
 }
 
 .pop-up__form {
-  padding-top: 29px;
+  padding-top: 32px;
   background-color: $color-secondary;
 }
 
 .pop-up h2 {
+  margin-top: 0;
   margin-bottom: 13px;
   font-family: $font-secondary;
   font-size: 28px;
@@ -33,6 +34,8 @@
 }
 
 .pop-up p {
+  margin-bottom: 0;
+  margin-top: 0;
   padding-left: 0;
   padding-right: 9px;
   font-family: $font-main;
@@ -43,6 +46,8 @@
 }
 
 .pop-up__form-field-contacts {
+  display: flex;
+  justify-content: space-between;
   flex-direction: column;
   margin-bottom: 1px;
   padding-bottom: 0;
@@ -50,13 +55,15 @@
 }
 
 .pop-up__form-field-contacts input {
-  margin-bottom: 31px;
+  margin-bottom: 29px;
   padding-bottom: 4px;
   min-height: 52px;
 }
 
 .pop-up__form-field-request textarea {
+  padding-top: 13px;
   min-height: 105px;
+  resize: none;
 }
 
 .pop-up__form-field-contacts input,
@@ -69,29 +76,109 @@
   font-size: 16px;
   line-height: 21.5px;
   color: $color-main;
+  background: transparent;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+::placeholder {
+  font-family: $font-main;
+  font-size: 16px;
+  line-height: 21.5px;
+  color: $color-main;
 }
 
 .pop-up__form-button-and-checkbox-wrapper {
+  display: flex;
+  justify-content: space-between;
   flex-direction: column;
-  margin-top: 26px;
+  margin-top: 28px;
   margin-left: 0;
   width: 411px;
 }
 
-.pop-up__form-button-and-checkbox-wrapper label {
-  width: 400px;
-  padding-left: 50px;
-}
-
 .pop-up__form-button {
+  justify-content: center;
   margin-bottom: 28px;
   width: 411px;
+  min-height: 45px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border: 1px solid $color-main;
+  background: transparent;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  &:active {
+    background-color: $color-main;
+    color: $color-secondary;
+  }
+}
+
+.pop-up__form-button-and-checkbox-wrapper label {
+  position: relative;
+  width: 410px;
+  padding-left: 49px;
+  margin-top: 5px;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    border: 1px solid $color-main;
+  }
+}
+
+.pop-up__caption {
+  cursor: pointer;
+
+  &:hover {
+    color: $color-background-light;
+  }
+}
+
+.pop-up__form-button-and-checkbox-wrapper input:checked + .pop-up__caption::before,
+.pop-up__form-button-and-checkbox-wrapper input:checked + .pop-up__caption::after {
+  content: "";
+  position: absolute;
+  top: 11px;
+  height: 1px;
+  background-color: $color-main;
+}
+
+.pop-up__form-button-and-checkbox-wrapper input:checked + .pop-up__caption::before {
+  left: 2px;
+  width: 6px;
+  transform: rotate(45deg);
+}
+
+.pop-up__form-button-and-checkbox-wrapper input:checked + .pop-up__caption::after {
+  left: 6px;
+  width: 7px;
+  transform: rotate(-45deg);
+}
+
+.pop-up__form-button-and-checkbox-wrapper span {
+  display: flex;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: $font-main;
+  font-weight: 400;
+  color: $color-main;
+  opacity: 0.8;
 }
 
 .pop-up__close {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 18px;
+  right: 15px;
   font-size: 0;
   border: 0;
   background: 0 0;
