@@ -117,7 +117,6 @@ if (feedbackScrollLink) {
     if (element.validity.patternMismatch) {
       element.setCustomValidity('Введите данные формата: +7 (ХХХ) ХХХ-ХХ-ХХ');
     } else {
-      console.log('hi');
       element.setCustomValidity('');
     }
   });

@@ -221,15 +221,7 @@
 .advantages__item p {
   margin: 0;
   color: $color-main-text;
-  line-height: 21.5px;
-
-  @media (max-width: $width-tablet) {
-    line-height: 21.6px;
-  }
-
-  @media (max-width: $width-mobile) {
-    line-height: 21.6px;
-  }
+  line-height: 22px;
 }
 
 .advantages__item--detective p {
